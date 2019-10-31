@@ -1,4 +1,4 @@
-package club.lyteacher.CircleArray;
+﻿package club.lyteacher.CircleArray;
 /**
  * ��ʵ��ѭ������
  * ��һ��Ԥ���ռ�δ������
@@ -7,7 +7,6 @@ import java.util.Scanner;
 
 public class CircleArray {
 	public static void main(String[] args) {
-		//测试提交
 		CircleQuerer querer = new CircleQuerer(4);
 		boolean loop = true;
 		char input = ' ';
