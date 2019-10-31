@@ -1,23 +1,44 @@
 package club.lyteacher.LinkedList;
-
+/**
+ * 单向链表
+ * @author guzx
+ *
+ */
 public class LinkedList {
 	public static void main(String[] args) {
-		
+		Linked linked= new Linked();
+		LinkInfo info1 =new LinkInfo(1,"guzx");
+		LinkInfo info2 =new LinkInfo(2,"lianghong");
+		LinkInfo info3 =new LinkInfo(3,"changchun");
+		linked.add(info1);
+		linked.addHead(info2);
+		linked.addHead(info3);
+		linked.showAll();
+		linked.reverLinked();
+		linked.showAll();
 	}
 }
-
+/**
+ * 链表
+ * @author guzx
+ *
+ */
 class Linked {
 	private LinkInfo headInfo = new LinkInfo(0, "");
 
+	/**
+	 *使用三个指针 将链表反转
+	 */
 	public void reverLinked() {
 		if (headInfo.nextInfo == null || headInfo.nextInfo.nextInfo == null) {
+			System.out.println("链表为空或只有一个元素，无需反转！");
 			return;
 		}
-		// ��ʱͷ���
+		//反转的临时表头
 		LinkInfo reverInfo = new LinkInfo(0, "");
-		// ���ڱ���
+		//链表中的第一个元素
 		LinkInfo tempInfo = headInfo.nextInfo;
-		// ָ��ǰ�ڵ����һ�ڵ�
+		//临时保存当前的第二个元素
 		LinkInfo nextInfo;
 		boolean flag = true;
 		while (flag) {
@@ -25,39 +46,42 @@ class Linked {
 				flag = false;
 				break;
 			} else {
-				// ����һ���ڵ��ݴ���next��
+				//先将后面一个元素取出，用于移动元素
 				nextInfo = tempInfo.nextInfo;
-				// ����ʱͷ���ָ��ԭ�����еĵڶ����ڵ�
+				//头部添加元素
 				tempInfo.nextInfo = reverInfo.nextInfo;
 				reverInfo.nextInfo = tempInfo;
-				// �ƶ�����һ�ڵ�
+				//temp后移
 				tempInfo = nextInfo;
 			}
 		}
 		headInfo.nextInfo = reverInfo.nextInfo;
 	}
 
+	//获取倒数第K个元素
 	public void getLastK(int k) {
 		if (headInfo.nextInfo == null) {
-			System.out.println("����Ϊ�գ�");
+			System.out.println("链表为空");
 		}
 		int length = size();
 		LinkInfo find = find(length - k + 1);
-		System.out.println("������" + k + "�������ǣ�" + find);
+		System.out.println("倒数第" + k + "个元素为：" + find);
 	}
 
+	//清空链表
 	public void clear() {
 		if (headInfo.nextInfo == null) {
-			System.out.println("�����Ѿ��ǿյ���!");
+			System.out.println("链表为空！");
 		} else {
 			headInfo.nextInfo = null;
-			System.out.println("�����Ѿ�������!");
+			System.out.println("链表已清空！");
 		}
 	}
 
+	//获取链表的长度
 	public int size() {
 		if (headInfo.nextInfo == null) {
-			System.out.println("����Ϊ��");
+			System.out.println("链表为空！");
 			return 0;
 		}
 		int length = 0;
@@ -75,6 +99,7 @@ class Linked {
 		return length;
 	}
 
+	//在末尾新增
 	public void add(LinkInfo info) {
 		LinkInfo tempInfo = headInfo;
 		while (true) {
@@ -85,15 +110,17 @@ class Linked {
 		}
 		tempInfo.nextInfo = info;
 	}
-
+	
+	//在头部新增
 	public void addHead(LinkInfo info) {
-		if (headInfo.nextInfo == null) {
-			return;
-		}
+//		if (headInfo.nextInfo == null) {
+//			return;
+//		}
 		info.nextInfo = headInfo.nextInfo;
 		headInfo.nextInfo = info;
 	}
 
+	//按编号顺序新增
 	public void addBySort(LinkInfo info) {
 		LinkInfo tempInfo = headInfo;
 		boolean flag = true;
@@ -103,12 +130,13 @@ class Linked {
 				flag = false;
 				continue;
 			}
+			
 			if (tempInfo.nextInfo.no > info.no) {
 				info.nextInfo = tempInfo.nextInfo;
 				tempInfo.nextInfo = info;
 				flag = false;
 			} else if(tempInfo.nextInfo.no == info.no){
-				System.out.println("�ñ�ŵ������Ѵ��ڣ�");
+				System.out.println("已存在该序号的元素，不可重复添加！");
 				flag=false;
 			}else{
 				tempInfo = tempInfo.nextInfo;
@@ -116,24 +144,27 @@ class Linked {
 		}
 	}
 
+	//删除头部元素
 	public void deleteHead() {
 		if (headInfo.nextInfo == null) {
+			System.out.println("链表为空，无法执行删除操作！");
 			return;
 		}
 		LinkInfo temInfo = headInfo.nextInfo.nextInfo;
 		headInfo.nextInfo = temInfo;
 	}
 
+	//删除指定编号的元素
 	public void delete(int no) {
 		if (headInfo.nextInfo == null) {
-			System.out.println("����Ϊ��");
+			System.out.println("链表为空，无法执行删除操作！");
 			return;
 		}
 		LinkInfo tempInfo = headInfo;
 		boolean flag = true;
 		while (flag) {
 			if (tempInfo.nextInfo == null) {
-				System.out.println("��ǰ������û��Ҫɾ�������ݣ�" + no);
+				System.out.println("不存在指定编号的元素：" + no);
 				flag = false;
 				break;
 			}
@@ -147,16 +178,17 @@ class Linked {
 		}
 	}
 
+	//更新指定编号的元素
 	public void update(LinkInfo info) {
 		if (headInfo.nextInfo == null) {
-			System.out.println("����Ϊ��");
+			System.out.println("链表为空，无法执行更新操作");
 			return;
 		}
 		LinkInfo tempInfo = headInfo;
 		boolean flag = true;
 		while (flag) {
 			if (tempInfo.nextInfo == null) {
-				System.out.println("��ǰ������û��Ҫ�޸ĵ����ݣ���Ϊ�����������ݵ�������" + info);
+				System.out.println("链表中未找到指定元素，先将元素添加到链表中！" + info);
 				add(info);
 				flag = false;
 				break;
@@ -170,16 +202,17 @@ class Linked {
 		}
 	}
 
+	//查找指定编号的元素
 	public LinkInfo find(int no) {
 		if (headInfo.nextInfo == null) {
-			System.out.println("����Ϊ��");
+			System.out.println("链表为空！");
 			return null;
 		}
 		LinkInfo tempInfo = headInfo;
 		boolean flag = true;
 		while (flag) {
 			if (tempInfo.nextInfo == null) {
-				System.out.println("��ǰ������û��Ҫ���ҵ�����");
+				System.out.println("未查找到指定编号的元素");
 				flag = false;
 				break;
 			}
@@ -191,13 +224,14 @@ class Linked {
 		}
 		return tempInfo;
 	}
-
+	
+	//显示链表中的所有元素
+	//显示链表中的所有元素
 	public void showAll() {
 		if (headInfo.nextInfo == null) {
-			System.out.println("����Ϊ��");
+			System.out.println("链表为空");
 			return;
 		}
-		// ��ʱ��������ͷָ�����һ������
 		LinkInfo tempInfo = headInfo.nextInfo;
 		while (true) {
 			if (tempInfo == null) {
@@ -209,6 +243,11 @@ class Linked {
 	}
 }
 
+/**
+ * 节点元素
+ * @author guzx
+ *
+ */
 class LinkInfo {
 	public int no;
 	public String name;

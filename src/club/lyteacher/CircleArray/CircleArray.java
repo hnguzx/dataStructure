@@ -1,5 +1,8 @@
 package club.lyteacher.CircleArray;
-
+/**
+ * 简单实现循环队列
+ * 有一个预留空间未存数据
+ */
 import java.util.Scanner;
 
 public class CircleArray {
@@ -93,7 +96,7 @@ class CircleQuerer {
 		if (isEmpty()) {
 			throw new RuntimeException("队列为空，无法取出数据");
 		}
-		var temp = arr[first];
+		int temp = arr[first];
 		first = (first + 1) % maxSize;
 		return temp;
 	}
@@ -102,12 +105,14 @@ class CircleQuerer {
 		if (isEmpty()) {
 			throw new RuntimeException("队列为空，无法取出数据");
 		}
+		System.out.println("当前队列中有多少个元素："+size());
 		for (int i = first; i < first + size(); i++) {
 			System.out.println(arr[i%maxSize]);
 		}
 	}
 
 	public int size() {
+		System.out.println("end:"+end+"first:"+first+"maxSize:"+maxSize);
 		return (end - first + maxSize) % maxSize;
 	}
 

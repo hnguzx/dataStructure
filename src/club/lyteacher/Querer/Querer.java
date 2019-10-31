@@ -1,5 +1,7 @@
 package club.lyteacher.Querer;
-
+/**
+ * 简单实现队列
+ */
 import java.util.Scanner;
 
 public class Querer {
