@@ -1,23 +1,24 @@
 package club.lyteacher.CircleArray;
 /**
- * ¼òµ¥ÊµÏÖÑ­»·¶ÓÁĞ
- * ÓĞÒ»¸öÔ¤Áô¿Õ¼äÎ´´æÊı¾İ
+ * ï¿½ï¿½Êµï¿½ï¿½Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½Ò»ï¿½ï¿½Ô¤ï¿½ï¿½ï¿½Õ¼ï¿½Î´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 import java.util.Scanner;
 
 public class CircleArray {
 	public static void main(String[] args) {
+		//æµ‹è¯•æäº¤
 		CircleQuerer querer = new CircleQuerer(4);
 		boolean loop = true;
 		char input = ' ';
 		Scanner scanner = new Scanner(System.in);
 		while (loop) {
-			System.out.printf("s(show): ÏÔÊ¾¶ÓÁĞ\t");
-			System.out.printf("e(exit): ÍË³ö³ÌĞò\t");
-			System.out.printf("a(add): Ìí¼ÓÊı¾İµ½¶ÓÁĞ\t");
-			System.out.printf("g(get): ´Ó¶ÓÁĞÈ¡³öÊı¾İ\t");
-			System.out.printf("h(head): ²é¿´¶ÓÁĞÍ·µÄÊı¾İ\t");
-			input = scanner.next().charAt(0);// ½ÓÊÕÒ»¸ö×Ö·û
+			System.out.printf("s(show): ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½\t");
+			System.out.printf("e(exit): ï¿½Ë³ï¿½ï¿½ï¿½ï¿½ï¿½\t");
+			System.out.printf("a(add): ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İµï¿½ï¿½ï¿½ï¿½ï¿½\t");
+			System.out.printf("g(get): ï¿½Ó¶ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\t");
+			System.out.printf("h(head): ï¿½é¿´ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\t");
+			input = scanner.next().charAt(0);// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½
 			switch (input) {
 			case 's':
 				try {
@@ -27,7 +28,7 @@ public class CircleArray {
 				}
 				break;
 			case 'a':
-				System.out.println("Êä³öÒ»¸öÊı");
+				System.out.println("ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½");
 				int value = scanner.nextInt();
 				try {
 					querer.add(value);
@@ -35,23 +36,23 @@ public class CircleArray {
 					System.out.println(e.getMessage());
 				}
 				break;
-			case 'g': // È¡³öÊı¾İ
+			case 'g': // È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				try {
 					int res = querer.get();
-					System.out.printf("È¡³öµÄÊı¾İÊÇ%d\n", res);
+					System.out.printf("È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½%d\n", res);
 				} catch (Exception e) {
 					System.out.println(e.getMessage());
 				}
 				break;
-			case 'h': // ²é¿´¶ÓÁĞÍ·µÄÊı¾İ
+			case 'h': // ï¿½é¿´ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				try {
 					int res = querer.showFirst();
-					System.out.printf("¶ÓÁĞÍ·µÄÊı¾İÊÇ%d\n", res);
+					System.out.printf("ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½%d\n", res);
 				} catch (Exception e) {
 					System.out.println(e.getMessage());
 				}
 				break;
-			case 'e': // ÍË³ö
+			case 'e': // ï¿½Ë³ï¿½
 				scanner.close();
 				loop = false;
 				break;
@@ -85,7 +86,7 @@ class CircleQuerer {
 
 	public void add(int val) {
 		if (isFull()) {
-			System.out.println("¶ÓÁĞÒÑÂú£¬ÎŞ·¨Ìí¼ÓÊı¾İ");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ş·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 			return;
 		}
 		arr[end] = val;
@@ -94,7 +95,7 @@ class CircleQuerer {
 
 	public int get() {
 		if (isEmpty()) {
-			throw new RuntimeException("¶ÓÁĞÎª¿Õ£¬ÎŞ·¨È¡³öÊı¾İ");
+			throw new RuntimeException("ï¿½ï¿½ï¿½ï¿½Îªï¿½Õ£ï¿½ï¿½Ş·ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		}
 		int temp = arr[first];
 		first = (first + 1) % maxSize;
@@ -103,9 +104,9 @@ class CircleQuerer {
 
 	public void showAll() {
 		if (isEmpty()) {
-			throw new RuntimeException("¶ÓÁĞÎª¿Õ£¬ÎŞ·¨È¡³öÊı¾İ");
+			throw new RuntimeException("ï¿½ï¿½ï¿½ï¿½Îªï¿½Õ£ï¿½ï¿½Ş·ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		}
-		System.out.println("µ±Ç°¶ÓÁĞÖĞÓĞ¶àÉÙ¸öÔªËØ£º"+size());
+		System.out.println("ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¶ï¿½ï¿½Ù¸ï¿½Ôªï¿½Ø£ï¿½"+size());
 		for (int i = first; i < first + size(); i++) {
 			System.out.println(arr[i%maxSize]);
 		}
@@ -118,7 +119,7 @@ class CircleQuerer {
 
 	public int showFirst() {
 		if (isEmpty()) {
-			throw new RuntimeException("¶ÓÁĞÎª¿Õ£¬ÎŞ·¨È¡³öÊı¾İ");
+			throw new RuntimeException("ï¿½ï¿½ï¿½ï¿½Îªï¿½Õ£ï¿½ï¿½Ş·ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		}
 		return arr[first];
 	}
