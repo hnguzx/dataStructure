@@ -1,23 +1,23 @@
-package club.lyteacher.SparseArray;
+ï»¿package club.lyteacher.SparseArray;
 
 /**
- * Ê¹ÓÃÏ¡ÊèÊı×é½øĞĞ¼òµ¥Ñ¹Ëõ
+ * ä½¿ç”¨ç¨€ç–æ•°ç»„è¿›è¡Œç®€å•å‹ç¼©
  * 
  * @author guzx
  *
  */
 public class Demo {
 	public static void main(String[] args) {
-		// ±»Ñ¹ËõµÄÊı×é
+		// è¢«å‹ç¼©çš„æ•°ç»„
 		int[][] orgArr = new int[5][5];
 		orgArr[1][2] = 1;
 		orgArr[2][3] = 2;
 		orgArr[2][4] = 1;
 
-		int rowCount = 0;// ĞĞÊı
-		int colCount = 0;// ÁĞÊı
-		int dataCount = 0;// Êı¾İ×ÜÊı
-		System.out.println("³õÊ¼Êı×é");
+		int rowCount = 0;// è¡Œæ•°
+		int colCount = 0;// åˆ—æ•°
+		int dataCount = 0;// æ•°æ®æ€»æ•°
+		System.out.println("åˆå§‹æ•°ç»„");
 		for (int[] row : orgArr) {
 			colCount = 0;
 			for (int col : row) {
@@ -30,13 +30,13 @@ public class Demo {
 			System.out.println();
 			rowCount++;
 		}
-		System.out.println("Ò»¹²ÓĞĞĞ£º" + rowCount + "Ò»¹²ÓĞÁĞ£º" + colCount + "Ò»¸öÓĞ¶àÉÙ¸öÊı¾İ£º" + dataCount);
-		// Ñ¹ËõºóµÄÊı×é
+		System.out.println("ä¸€å…±æœ‰è¡Œï¼š" + rowCount + "ä¸€å…±æœ‰åˆ—ï¼š" + colCount + "ä¸€ä¸ªæœ‰å¤šå°‘ä¸ªæ•°æ®ï¼š" + dataCount);
+		// å‹ç¼©åçš„æ•°ç»„
 		int[][] sparseArr = new int[dataCount + 1][3];
 		sparseArr[0][0] = rowCount;
 		sparseArr[0][1] = colCount;
 		sparseArr[0][2] = dataCount;
-		// Ñ¹Ëõ
+		// å‹ç¼©
 		int sparseRow = 1;
 		for (int i = 0; i < rowCount; i++) {
 			for (int j = 0; j < colCount; j++) {
@@ -49,7 +49,7 @@ public class Demo {
 			}
 		}
 
-		System.out.println("Ñ¹ËõºóµÄ£º");
+		System.out.println("å‹ç¼©åçš„ï¼š");
 
 		for (int i = 0; i < sparseArr.length; i++) {
 			for (int j = 0; j < 3; j++) {
@@ -57,12 +57,12 @@ public class Demo {
 			}
 			System.out.println();
 		}
-		// ½âÑ¹Ëõ
+		// è§£å‹ç¼©
 		int arr3[][] = new int[sparseArr[0][0]][sparseArr[0][1]];
 		for (int i = 0; i < dataCount; i++) {
 			arr3[sparseArr[i + 1][0]][sparseArr[i + 1][1]] = sparseArr[i + 1][2];
 		}
-		System.out.println("»Ö¸´ºó£º");
+		System.out.println("æ¢å¤åï¼š");
 		for (int[] row : arr3) {
 			for (int col : row) {
 				System.out.printf("%d\t", col);

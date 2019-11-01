@@ -1,4 +1,4 @@
-package club.lyteacher.LinkedList;
+﻿package club.lyteacher.LinkedList;
 /**
  * 单向链表
  * @author guzx

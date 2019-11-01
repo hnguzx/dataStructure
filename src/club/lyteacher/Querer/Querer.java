@@ -1,6 +1,6 @@
-package club.lyteacher.Querer;
+ï»¿package club.lyteacher.Querer;
 /**
- * ¼òµ¥ÊµÏÖ¶ÓÁĞ
+ * ç®€å•å®ç°é˜Ÿåˆ—
  */
 import java.util.Scanner;
 
@@ -11,12 +11,12 @@ public class Querer {
 		char input = ' ';
 		Scanner scanner = new Scanner(System.in);
 		while (loop) {
-			System.out.printf("s(show): ÏÔÊ¾¶ÓÁĞ\t");
-			System.out.printf("e(exit): ÍË³ö³ÌĞò\t");
-			System.out.printf("a(add): Ìí¼ÓÊı¾İµ½¶ÓÁĞ\t");
-			System.out.printf("g(get): ´Ó¶ÓÁĞÈ¡³öÊı¾İ\t");
-			System.out.printf("h(head): ²é¿´¶ÓÁĞÍ·µÄÊı¾İ\t");
-			input = scanner.next().charAt(0);// ½ÓÊÕÒ»¸ö×Ö·û
+			System.out.printf("s(show): æ˜¾ç¤ºé˜Ÿåˆ—\t");
+			System.out.printf("e(exit): é€€å‡ºç¨‹åº\t");
+			System.out.printf("a(add): æ·»åŠ æ•°æ®åˆ°é˜Ÿåˆ—\t");
+			System.out.printf("g(get): ä»é˜Ÿåˆ—å–å‡ºæ•°æ®\t");
+			System.out.printf("h(head): æŸ¥çœ‹é˜Ÿåˆ—å¤´çš„æ•°æ®\t");
+			input = scanner.next().charAt(0);// æ¥æ”¶ä¸€ä¸ªå­—ç¬¦
 			switch (input) {
 			case 's':
 				try {
@@ -26,7 +26,7 @@ public class Querer {
 				}
 				break;
 			case 'a':
-				System.out.println("Êä³öÒ»¸öÊı");
+				System.out.println("è¾“å‡ºä¸€ä¸ªæ•°");
 				int value = scanner.nextInt();
 				try {
 					querer.add(value);
@@ -34,23 +34,23 @@ public class Querer {
 					System.out.println(e.getMessage());
 				}
 				break;
-			case 'g': // È¡³öÊı¾İ
+			case 'g': // å–å‡ºæ•°æ®
 				try {
 					int res = querer.get();
-					System.out.printf("È¡³öµÄÊı¾İÊÇ%d\n", res);
+					System.out.printf("å–å‡ºçš„æ•°æ®æ˜¯%d\n", res);
 				} catch (Exception e) {
 					System.out.println(e.getMessage());
 				}
 				break;
-			case 'h': // ²é¿´¶ÓÁĞÍ·µÄÊı¾İ
+			case 'h': // æŸ¥çœ‹é˜Ÿåˆ—å¤´çš„æ•°æ®
 				try {
 					int res = querer.showFirst();
-					System.out.printf("¶ÓÁĞÍ·µÄÊı¾İÊÇ%d\n", res);
+					System.out.printf("é˜Ÿåˆ—å¤´çš„æ•°æ®æ˜¯%d\n", res);
 				} catch (Exception e) {
 					System.out.println(e.getMessage());
 				}
 				break;
-			case 'e': // ÍË³ö
+			case 'e': // é€€å‡º
 				scanner.close();
 				loop = false;
 				break;
@@ -84,7 +84,7 @@ class ArrayQuerer {
 
 	public void add(int val) {
 		if (isFull()) {
-			System.out.println("¶ÓÁĞÒÑÂú£¬ÎŞ·¨Ìí¼ÓÊı¾İ");
+			System.out.println("é˜Ÿåˆ—å·²æ»¡ï¼Œæ— æ³•æ·»åŠ æ•°æ®");
 			return;
 		}
 		arr[end++] = val;
@@ -92,14 +92,14 @@ class ArrayQuerer {
 
 	public int get() {
 		if (isEmpty()) {
-			throw new RuntimeException("¶ÓÁĞÎª¿Õ£¬ÎŞ·¨È¡³öÊı¾İ");
+			throw new RuntimeException("é˜Ÿåˆ—ä¸ºç©ºï¼Œæ— æ³•å–å‡ºæ•°æ®");
 		}
 		return arr[first++];
 	}
 
 	public void showAll() {
 		if (isEmpty()) {
-			throw new RuntimeException("¶ÓÁĞÎª¿Õ£¬ÎŞ·¨È¡³öÊı¾İ");
+			throw new RuntimeException("é˜Ÿåˆ—ä¸ºç©ºï¼Œæ— æ³•å–å‡ºæ•°æ®");
 		}
 		for (int i = first; i < end; i++) {
 			System.out.println(arr[i]);
@@ -108,7 +108,7 @@ class ArrayQuerer {
 
 	public int showFirst() {
 		if (isEmpty()) {
-			throw new RuntimeException("¶ÓÁĞÎª¿Õ£¬ÎŞ·¨È¡³öÊı¾İ");
+			throw new RuntimeException("é˜Ÿåˆ—ä¸ºç©ºï¼Œæ— æ³•å–å‡ºæ•°æ®");
 		}
 		return arr[first];
 	}
