@@ -3,6 +3,7 @@ package cn.guzx.array;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.util.Scanner;
 
 public class SparseArray {
 
@@ -50,26 +51,33 @@ public class SparseArray {
                 }
             }
         }
-        File file = new File("cn.file.spareArray.txt");
+        File file = new File("src/cn/file/spareArray.txt");
+
         PrintWriter printWriter = new PrintWriter(file);
+
+
         System.out.println("压缩后数组");
         for (int[] array : compress) {
             for (int value : array) {
                 System.out.printf("%d\t", value);
-                printWriter.print(value);
+                printWriter.printf("%d\t", value);
             }
             System.out.println();
+            printWriter.printf("\n");
         }
         // 将压缩后数组写入磁盘
+        printWriter.close();
 
-
-
-
+        Scanner read = new Scanner(file);
+        System.out.println("从文件中读取数据");
         // 解压缩
-        int[][] decompress = new int[compress[0][0]][compress[0][1]];
-        for (int i = 1; i <= compress[0][2]; i++) {
-            decompress[compress[i][0]][compress[i][1]] = compress[i][2];
+        int[][] decompress = new int[read.nextInt()][read.nextInt()];
+        // 从文件中读取数组
+        read.nextLine();
+        while (read.hasNext()) {
+            decompress[read.nextInt()][read.nextInt()] = read.nextInt();
         }
+        read.close();
         System.out.println("解压后数组");
         for (int[] array : decompress) {
             for (int value : array) {
