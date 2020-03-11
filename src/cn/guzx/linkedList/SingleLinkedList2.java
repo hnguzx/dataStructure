@@ -6,9 +6,10 @@ import java.util.Stack;
  * 有头结点的单向链表
  */
 
-public class SingleLinkedList {
+public class SingleLinkedList2 {
+
     public static void main(String[] args) {
-        LinkedList linkedList = new LinkedList();
+
         Person2 person1 = new Person2();
         person1.setId(1);
         person1.setName("李虎");
@@ -25,40 +26,33 @@ public class SingleLinkedList {
         person4.setId(3);
         person4.setName("唐太宗");
 
+        LinkedList2 linkedList2 = new LinkedList2(person1);
 
-        linkedList.add(person1);
-        linkedList.addOrderById(person3);
-        linkedList.addOrderById(person3);
-        linkedList.addOrderById(person2);
-        System.out.println("当前有效节点数：" + linkedList.getCount());
-        linkedList.showNodeInfo();
-        System.out.println("进行逆序打印");
-        linkedList.reversePrint();
+        linkedList2.add(person2);
+        linkedList2.add(person3);
+        linkedList2.update(person4);
+        linkedList2.delete(2);
+
+        linkedList2.showNodeInfo();
+
+        System.out.println("当前一共有：" + linkedList2.getCount());
+        System.out.println("倒数第2个是：" + linkedList2.getReverseNode(2));
+        System.out.println("逆序打印");
+        linkedList2.reversePrint();
         System.out.println("进行翻转");
-        linkedList.reverseLinkedList();
-        linkedList.showNodeInfo();
-
-        System.out.println("倒数第3个是" + linkedList.getReverseNode(3));
-
-        linkedList.update(person4);
-        linkedList.showNodeInfo();
-
-        linkedList.delete(2);
-        linkedList.delete(1);
-        linkedList.showNodeInfo();
-
-        System.out.println("当前有效节点数：" + linkedList.getCount());
+        linkedList2.reverseLinkedList();
+        linkedList2.showNodeInfo();
     }
 }
 
-class LinkedList {
+class LinkedList2 {
 
-    private Person2 headNode = new Person2();
+    private Person2 headNode = null;
+    private Person2 last = null;
 
-    public LinkedList() {
-        headNode.setId(0);
-        headNode.setName("");
-        headNode.setPerson(null);
+    public LinkedList2(Person2 person) {
+        headNode = person;
+        last = headNode;
     }
 
     public boolean isEmpty() {
@@ -67,15 +61,10 @@ class LinkedList {
 
     // 按插入顺序添加
     public void add(Person2 node) {
-        Person2 temp = new Person2();
-        temp = headNode;
-        while (true) {
-            if (temp.getPerson() == null) {
-                break;
-            }
-            temp = temp.getPerson();
-        }
-        temp.setPerson(node);
+        Person2 temp = headNode;
+        Person2 l = last;
+        l.setPerson(node);
+        last = last.getPerson();
     }
 
     // 按编号顺序插入
@@ -147,12 +136,12 @@ class LinkedList {
     public int getCount() {
         int count = 0;
         Person2 temp = headNode;
-        if (temp.getPerson() == null) {
+        if (temp == null) {
             System.out.println("空链表");
             return count;
         }
         while (true) {
-            if (temp.getPerson() != null) {
+            if (temp != null) {
                 count++;
                 temp = temp.getPerson();
             } else {
@@ -176,17 +165,17 @@ class LinkedList {
         for (int i = 0; i < count - n; i++) {
             temp = temp.getPerson();
         }
-        return temp.getPerson();
+        return temp;
     }
 
     // 将链表翻转
     public void reverseLinkedList() {
 
-        if (headNode.getPerson() == null || headNode.getPerson().getPerson() == null) {
+        if (headNode == null || headNode.getPerson() == null) {
             System.out.println("无需翻转");
             return;
         }
-        Person2 temp = headNode.getPerson(); // 当前节点
+        Person2 temp = headNode; // 当前节点
         Person2 next = null; // 用于保存当前节点的下一个节点
         Person2 newHead = new Person2();
         while (true) {
@@ -198,12 +187,12 @@ class LinkedList {
             newHead.setPerson(temp);    // 将新链表的头指向新节点
             temp = next; // 将临时节点后移
         }
-        headNode.setPerson(newHead.getPerson()); // 将原链表头结点指向新链表的头结点的后一个节点
+        headNode = newHead.getPerson(); // 将原链表头结点指向新链表的头结点的后一个节点
     }
 
     // 将链表中的元素逆转打印
     public void reversePrint() {
-        Person2 temp = headNode.getPerson();
+        Person2 temp = headNode;
         Stack<Person2> list = new Stack<>();
         while (true) {
             if (temp == null) {
@@ -219,53 +208,15 @@ class LinkedList {
 
     // 展示所有节点信息
     public void showNodeInfo() {
-        Person2 temp = new Person2();
-        temp = headNode;
+        Person2 temp = headNode;
         while (true) {
-            if (temp.getPerson() == null) {
+            if (temp == null) {
                 break;
             }
-            System.out.print(temp.getPerson());
+            System.out.print(temp);
             temp = temp.getPerson();
         }
         System.out.println("");
     }
 }
 
-class Person2 {
-    private int id; // 节点元素的id
-    private String name;    // 节点元素的名称
-    private Person2 next;   // 指向当前节点的下一个节点
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Person2 getPerson() {
-        return next;
-    }
-
-    public void setPerson(Person2 person) {
-        this.next = person;
-    }
-
-    @Override
-    public String toString() {
-        return "Person2{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                '}';
-    }
-}
