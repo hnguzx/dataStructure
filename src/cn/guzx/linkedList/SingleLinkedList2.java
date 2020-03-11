@@ -61,7 +61,6 @@ class LinkedList2 {
 
     // 按插入顺序添加
     public void add(Person2 node) {
-        Person2 temp = headNode;
         Person2 l = last;
         l.setPerson(node);
         last = last.getPerson();

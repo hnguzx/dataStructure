@@ -1,11 +1,8 @@
 package cn.guzx.linkedList;
 
-import java.util.Stack;
-
-
 public class BothwayLinkedList {
     public static void main(String[] args) {
-        DoubleLinkedList doubleLinkedList = new DoubleLinkedList();
+        // DoubleLinkedList doubleLinkedList = new DoubleLinkedList();
 
         Person person1 = new Person();
         person1.setId(1);
@@ -278,10 +275,6 @@ class DoubleLinkedList2 {
                 flag = true;
                 break;
             }
-            if (temp == null) {
-                System.out.println("该id所表示的节点不存在");
-                break;
-            }
             temp = temp.getNext();
         }
         if (flag) {
@@ -298,11 +291,6 @@ class DoubleLinkedList2 {
                 flag = true;
                 break;
             }
-            if (temp == null) {
-                System.out.println("没有找到要删除的节点元素");
-                break;
-            }
-
             temp = temp.getNext();
         }
         if (flag) {
