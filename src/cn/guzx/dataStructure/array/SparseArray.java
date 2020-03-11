@@ -1,4 +1,4 @@
-package cn.guzx.array;
+package cn.guzx.dataStructure.array;
 
 import java.io.File;
 import java.io.FileNotFoundException;

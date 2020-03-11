@@ -1,12 +1,8 @@
-package cn.guzx.queue;
+package cn.guzx.dataStructure.array.queue;
 
-/**
- * 留有一个空余位置
- */
-
-public class CirculationQueue {
+public class TempQueue {
     public static void main(String[] args) {
-        Queue3 queue = new Queue3(5);
+        Queue2 queue = new Queue2(5);
         queue.add(1);
         queue.add(2);
         queue.add(3);
@@ -28,20 +24,22 @@ public class CirculationQueue {
         queue.add(9);
         queue.showQueue();
         System.out.println("当前队列头是：" + queue.getHead());
+
+
     }
 }
 
-class Queue3 {
-    private int size; // 初始大小
-    private int head; // 指向队列头后一个下标
+class Queue2 {
+    private int size; // 队列的长度
+    private int head; // 指向队列头下标
     private int tail; // 指向队列尾部下标
-    private int[] array; //用于保存数据
+    private int[] array; // 用于保存数据
 
-    public Queue3(int size) {
+    public Queue2(int size) {
         this.size = size;
+        array = new int[size];
         head = 0;
         tail = 0;
-        array = new int[size];
     }
 
     public boolean isEmpty() {
@@ -49,8 +47,7 @@ class Queue3 {
     }
 
     public boolean isFull() {
-        // 留一个空余位置
-        return (head + 1) % size == tail;
+        return head == size;
     }
 
     public void add(int value) {
@@ -59,19 +56,23 @@ class Queue3 {
             return;
         }
         array[head] = value;
-        head = (head + 1) % size;
+        head++;
     }
 
     public void delete() {
         if (isEmpty()) {
-            System.out.println("队列为空");
+            System.out.println("队列已经为空，无法删除");
             return;
         }
-        tail = (tail + 1) % size;
+        tail++;
     }
 
     public int getHead() {
-        return array[head-1];
+        if (isEmpty()) {
+            System.out.println("队列为空");
+            return 0;
+        }
+        return array[head - 1];
     }
 
     public int getCount() {
@@ -79,18 +80,19 @@ class Queue3 {
         if (isEmpty()) {
             return count;
         }
-        count = (head + size - tail) % size;
+        for (int i = tail; i < head; i++) {
+            count++;
+        }
         return count;
     }
 
     public void showQueue() {
         if (isEmpty()) {
-            System.out.println("队列为空");
+            System.out.println("队列已经为空");
             return;
         }
-        for (int i = 0; i < getCount(); i++) {
-            System.out.printf("%d\t", array[(tail + i) % size]);
+        for (int i = tail; i < head; i++) {
+            System.out.printf("%d\t", array[i]);
         }
-        System.out.println();
     }
 }

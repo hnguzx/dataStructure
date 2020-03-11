@@ -1,4 +1,4 @@
-package cn.guzx.linkedList;
+package cn.guzx.dataStructure.array.linkedList;
 
 public class CirculationLinkedList {
     public static void main(String[] args) {

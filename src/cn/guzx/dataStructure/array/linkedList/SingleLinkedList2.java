@@ -1,4 +1,4 @@
-package cn.guzx.linkedList;
+package cn.guzx.dataStructure.array.linkedList;
 
 import java.util.Stack;
 

@@ -1,8 +1,6 @@
-package cn.guzx.stack;
+package cn.guzx.dataStructure.array.stack;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 /**
  * 数组实现栈
@@ -20,12 +18,15 @@ public class ArrayStack {
          * System.out.println(stack.pop());
          */
 
-        String expression = "1+((2+3)*4)–5";
-        // System.out.println("计算结果是：" + stack.computerNumber(expression));
+//        String expression = "11+2*3+4*5";
+        String expression = "1+((2+3)*4)-5";
+//        System.out.println("计算结果是：" + stack.computerNumber(expression));
 
         System.out.println("中缀转前缀：");
         String result = stack.middleToFront(expression);
         System.out.println(result);
+        System.out.println("计算结果：");
+        System.out.println(stack.computerFront(result));
 
     }
 }
@@ -95,18 +96,20 @@ class Stack2 {
         // 扫描表达式
         for (int i = 0; i < str.length(); i++) {
             char value = str.substring(i, i + 1).charAt(0);
-            // 是操作符 111+2*3+4*5
-
-            if (isOper(value)) {
+            if (isOper(value)) { // 是操作符
                 // 操作符栈为空
                 if (!operation.isEmpty()) {
                     // 当前操作符的优先级小于栈顶操作符的优先级
                     if (operLevel(value) < operLevel(operation.peek())) {
                         number.push(computNumber(number.pop(), number.pop(), operation.pop()));
+                        operation.push(value);
+                    } else {
+                        operation.push(value);
                     }
-                } // 是数字
-                operation.push(value);
-            } else {
+                } else {
+                    operation.push(value);
+                }
+            } else { // 是数字
                 inputNumber += value - 48;
                 if (i < str.length() - 1) {
                     while (!isOper(str.substring(i + 1, i + 2).charAt(0))) {
@@ -130,7 +133,7 @@ class Stack2 {
 
     // 判读字符是否是操作符号
     public static boolean isOper(int c) {
-        if (c == '+' || c == '-' || c == '/' || c == '*'|| c == '('|| c == ')') {
+        if (c == '+' || c == '-' || c == '/' || c == '*' || c == '(' || c == ')') {
             return true;
         }
         return false;
@@ -166,10 +169,17 @@ class Stack2 {
             default:
                 break;
         }
-        return result;
+        return result+48;
     }
 
     // 中缀表达式转前缀表达式
+    // 从右至左扫描中缀表达式。
+    // 如果是操作数，则直接输出，作为前缀表达式的一个直接转换表达式Temp（最后，前缀表达式由该表达式翻转得到）；
+    // 如果是运算符，则比较优先级：
+    //  若该运算符优先级大于等于栈顶元素，则将该运算符入栈，
+    //  否则栈内元素出栈并加到Temp表达式尾端，直到该运算符大于等于栈顶元素的优先级时，再将该运算符压入栈中。
+    // 遇到右括号直接压入栈中，如果遇到一个左括号，那么就将栈元素弹出并加到Temp表达式尾端，但左右括号并不输出。
+    // 最后，若运算符栈中还有元素，则将元素一次弹出并加到Temp表达式尾端，最后一步是将Temp表达式翻转。
     public String middleToFront(String middleStr) {
         // 从右至左扫描中缀表达式。
         // 如果是操作数，则直接输出，作为前缀表达式的一个直接转换表达式Temp（最后，前缀表达式由该表达式翻转得到）；
@@ -178,15 +188,13 @@ class Stack2 {
         // 否则栈内元素出栈并加到Temp表达式尾端，直到该运算符大于等于栈顶元素的优先级时，再将该运算符压入栈中。
         // 遇到右括号直接压入栈中，如果遇到一个左括号，那么就将栈元素弹出并加到Temp表达式尾端，但左右括号并不输出。
         // 最后，若运算符栈中还有元素，则将元素一次弹出并加到Temp表达式尾端，最后一步是将Temp表达式翻转。
-        // 111+2*3+4*5 ===>  54*32*+111+
         String result = "";
-        Stack2 numberStack2 = new Stack2(100);
-        Stack2 operationStack = new Stack2(100);
+        Stack2 numberStack2 = new Stack2(10);
+        Stack2 operationStack = new Stack2(10);
         for (int i = middleStr.length() - 1; i >= 0; i--) {
             char value = middleStr.substring(i, i + 1).charAt(0);
             if (!isOper(value)) {
-                // result += value;
-                numberStack2.push(value);
+                result += value;
             } else {
                 if (operationStack.isEmpty()) {
                     operationStack.push(value);
@@ -194,40 +202,69 @@ class Stack2 {
                     operationStack.push(value);
                 } else if (value == '(') {
                     while (operationStack.peek() != ')') {
-                        result+=(char)operationStack.pop();
+                        result += (char) operationStack.pop();
                     }
                     operationStack.pop();
                 } else {
-                    while (!operationStack.isEmpty() && isOper(operationStack.peek()) && operLevel(value) <= operLevel(operationStack.peek())) {
-                        if (operationStack.size > 0) {
-                            result+=(char)operationStack.pop();
+                    while (!operationStack.isEmpty() && isOper(operationStack.peek()) && operLevel(value) < operLevel(operationStack.peek())) {
+                        if (operationStack.getCount() > 0) {
+                            result += (char) operationStack.pop();
                         }
                     }
-
                     operationStack.push(value);
                 }
             }
         }
-        while(operationStack.getCount()>0){
-            result+=(char)operationStack.pop();
+        while (operationStack.getCount() > 0) {
+            result += (char) operationStack.pop();
         }
         return result;
     }
 
     // 对前缀表达式进行计算
-    // public int computerFront(String str) {
-    // List<Integer> number = new ArrayList<>();
-    // Stack<Integer> operation = new Stack<>();
+    //从右至左扫描表达式，遇到数字时，将数字压入堆栈，
+    //遇到运算符时，弹出栈顶的两个数，用运算符对它们做相应的计算（栈顶元素 和 次顶元素），
+    //并将结果入栈；重复上述过程直到表达式最左端，最后运算得出的值即为表达式的结果
+    public int computerFront(String str) {
+        Stack<Integer> number = new Stack<>();
+        String newStr = "";
+        int index = 0;
+        for (int i = str.length() - 1; i >= 0; i--) {
+            newStr += str.substring(i, i + 1).charAt(0);
+        }
+        System.out.println("新的字符串：");
+        System.out.println(newStr);
+        // 扫描表达式
+        for (int i = newStr.length() - 1; i >= 0; i--) {
+            char value = newStr.substring(i, i + 1).charAt(0);
+            if (!isOper(value)) {
+                number.push((int)value);
+            } else {
+                number.push(computNumber(number.pop()-48, number.pop()-48, (char) value));
+            }
+        }
 
-    // // 扫描表达式
-    // for (int i = 0; i < str.length(); i++) {
-    // char value = str.substring(i, i + 1).charAt(0);
-    // if (isOper(value)) {
-    // // 操作符栈为空
+        return number.pop()-48;
+    }
 
-    // }
-    // }
+    // 中缀表达式转后缀表达式
+    // 左到右遍历中缀表达式的每个操作数和操作符。
+    // 当读到操作数时，立即把它输出，即成为后缀表达式的一部分；
+    // 若读到操作符，判断该符号与栈顶符号的优先级，
+    //  若该符号优先级高于栈顶元素，则将该操作符入栈，
+    //  否则就一次把栈中运算符弹出并加到后缀表达式尾端，直到遇到优先级低于该操作符的栈元素，然后把该操作符压入栈中。
+    //  如果遇到”(”，直接压入栈中，如果遇到一个”)”，那么就将栈元素弹出并加到后缀表达式尾端，但左右括号并不输出。
+    // 最后，如果读到中缀表达式的尾端，将栈元素依次完全弹出并加到后缀表达式尾端。
+    public String middleToLater(String middleStr){
 
-    // return 0;
-    // }
+        return null;
+    }
+
+    // 计算后缀表达式
+    // 从左至右扫描表达式，遇到数字时，将数字压入堆栈，
+    // 遇到运算符时，弹出栈顶的两个数，用运算符对它们做相应的计算（次顶元素 和 栈顶元素）
+    // 并将结果入栈；重复上述过程直到表达式最右端，最后运算得出的值即为表达式的结果
+    public int computerLast(String str){
+        return 0;
+    }
 }

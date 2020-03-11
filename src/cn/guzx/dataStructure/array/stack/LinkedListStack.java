@@ -1,4 +1,4 @@
-package cn.guzx.stack;
+package cn.guzx.dataStructure.array.stack;
 
 
 /**
