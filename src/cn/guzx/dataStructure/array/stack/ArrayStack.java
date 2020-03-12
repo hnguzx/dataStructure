@@ -25,8 +25,13 @@ public class ArrayStack {
         System.out.println("中缀转前缀：");
         String result = stack.middleToFront(expression);
         System.out.println(result);
-        System.out.println("计算结果：");
+        System.out.println("计算前缀表达式的结果：");
         System.out.println(stack.computerFront(result));
+        System.out.println("中缀转后缀：");
+        String lastResult = stack.middleToLater(expression);
+        System.out.println(lastResult);
+        System.out.println("计算后缀表达式的结果：");
+        System.out.println(stack.computerLast(lastResult));
 
     }
 }
@@ -150,7 +155,7 @@ class Stack2 {
         }
     }
 
-    // 进行计算 1+2*3+4*5
+    // 进行计算 1+((2+3)*4)-5
     public static int computNumber(int number1, int number2, int oper) {
         int result = 0;
         switch (oper) {
@@ -164,12 +169,12 @@ class Stack2 {
                 result = number1 + number2;
                 break;
             case '-':
-                result = number1 - number2;
+                result = number2 - number1;
                 break;
             default:
                 break;
         }
-        return result+48;
+        return result + 48;
     }
 
     // 中缀表达式转前缀表达式
@@ -238,13 +243,13 @@ class Stack2 {
         for (int i = newStr.length() - 1; i >= 0; i--) {
             char value = newStr.substring(i, i + 1).charAt(0);
             if (!isOper(value)) {
-                number.push((int)value);
+                number.push((int) value);
             } else {
-                number.push(computNumber(number.pop()-48, number.pop()-48, (char) value));
+                number.push(computNumber(number.pop() - 48, number.pop() - 48, (char) value));
             }
         }
 
-        return number.pop()-48;
+        return number.pop() - 48;
     }
 
     // 中缀表达式转后缀表达式
@@ -255,16 +260,55 @@ class Stack2 {
     //  否则就一次把栈中运算符弹出并加到后缀表达式尾端，直到遇到优先级低于该操作符的栈元素，然后把该操作符压入栈中。
     //  如果遇到”(”，直接压入栈中，如果遇到一个”)”，那么就将栈元素弹出并加到后缀表达式尾端，但左右括号并不输出。
     // 最后，如果读到中缀表达式的尾端，将栈元素依次完全弹出并加到后缀表达式尾端。
-    public String middleToLater(String middleStr){
+    public String middleToLater(String middleStr) {
+        String number = "";
+        Stack2 operation = new Stack2(100);
+        for (int i = 0; i < middleStr.length(); i++) {
+            char value = middleStr.substring(i, i + 1).charAt(0);
+            if (!isOper(value)) {
+                number+=value;
+            } else {
+                if (operation.isEmpty()) {
+                    operation.push(value);
+                } else if (value == '(') {
+                    operation.push(value);
+                } else if (value == ')') {
+                    while (operation.peek() != '(' && !operation.isEmpty()) {
+                        number+=(char)operation.pop();
+                    }
+                    operation.pop();
+                } else if (operLevel(value) > operLevel(operation.peek())) {
+                    operation.push(value);
+                } else {
+                    number+=(char)operation.pop();
+                    while (operation.getCount() > 0 && operLevel(peek()) <= operLevel(value)) {
+                        number+=(char)operation.pop();
+                    }
+                    operation.push(value);
+                }
+            }
+        }
+        while (operation.getCount() > 0) {
+            number+=(char)operation.pop();
+        }
 
-        return null;
+        return number;
     }
 
     // 计算后缀表达式
     // 从左至右扫描表达式，遇到数字时，将数字压入堆栈，
     // 遇到运算符时，弹出栈顶的两个数，用运算符对它们做相应的计算（次顶元素 和 栈顶元素）
     // 并将结果入栈；重复上述过程直到表达式最右端，最后运算得出的值即为表达式的结果
-    public int computerLast(String str){
-        return 0;
+    public int computerLast(String str) {
+        Stack2 number = new Stack2(100);
+        for (int i = 0; i < str.length(); i++) {
+            char value = str.substring(i, i + 1).charAt(0);
+            if (!isOper(value)) {
+                number.push(value);
+            } else {
+                number.push(computNumber(number.pop()-48, number.pop()-48, value));
+            }
+        }
+        return number.pop()-48;
     }
 }
