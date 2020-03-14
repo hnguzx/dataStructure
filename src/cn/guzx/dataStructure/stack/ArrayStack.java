@@ -194,7 +194,6 @@ class Stack2 {
         // 遇到右括号直接压入栈中，如果遇到一个左括号，那么就将栈元素弹出并加到Temp表达式尾端，但左右括号并不输出。
         // 最后，若运算符栈中还有元素，则将元素一次弹出并加到Temp表达式尾端，最后一步是将Temp表达式翻转。
         String result = "";
-        Stack2 numberStack2 = new Stack2(10);
         Stack2 operationStack = new Stack2(10);
         for (int i = middleStr.length() - 1; i >= 0; i--) {
             char value = middleStr.substring(i, i + 1).charAt(0);
@@ -233,7 +232,6 @@ class Stack2 {
     public int computerFront(String str) {
         Stack<Integer> number = new Stack<>();
         String newStr = "";
-        int index = 0;
         for (int i = str.length() - 1; i >= 0; i--) {
             newStr += str.substring(i, i + 1).charAt(0);
         }
