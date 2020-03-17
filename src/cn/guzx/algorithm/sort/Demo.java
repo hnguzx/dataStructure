@@ -1,60 +1,66 @@
 package cn.guzx.algorithm.sort;
 
+import java.util.Arrays;
+import java.util.Date;
+
 public class Demo {
     public static void main(String[] args) {
-        int[] orgin = new int[8];
-        orgin[0] = 1;
-        orgin[1] = 22;
-        orgin[2] = 8;
-        orgin[3] = 7;
-        orgin[4] = 6;
-        orgin[5] = 5;
-        orgin[6] = 3;
-        orgin[7] = 2;
-
-        System.out.println("排序前：");
-        for (int i : orgin) {
-            System.out.print(i + " ");
+        int[] origin = new int[80000];
+        for (int i = 0; i < 80000; i++) {
+            origin[i] = (int) (Math.random() * 80000);
         }
-        System.out.println();
 
-        // bubb(orgin);
-        select(orgin);
+//        System.out.println("开始时间：" + new Date());
+//        bubble(origin);
+//        System.out.println("结束时间：" + new Date());
 
-        System.out.println("排序后：");
-        for (int i : orgin) {
-            System.out.print(i + " ");
+        System.out.println("开始时间：" + new Date());
+        select(origin);
+        System.out.println("结束时间：" + new Date());
+        System.out.println("排序结果：");
+        for (int i =0;i<20;i++){
+            System.out.print(origin[i]+",");
         }
 
     }
 
-    public static void bubb(int[] orgin) {
+    // 冒泡排序
+    public static void bubble(int[] origin) {
         int temp = 0;
-        for (int i = 0; i < orgin.length; i++) {
-            for (int j = i + 1; j < orgin.length; j++) {
-                if (orgin[i] > orgin[j]) {
-                    temp = orgin[i];
-                    orgin[i] = orgin[j];
-                    orgin[j] = temp;
+        boolean isContinue = false;
+        for (int j = 0; j < origin.length; j++) {
+            isContinue = false;
+            for (int i = 0; i < origin.length - 1 - j; i++) {
+                if (origin[i] > origin[i + 1]) {
+                    isContinue = true;
+                    temp = origin[i];
+                    origin[i] = origin[i + 1];
+                    origin[i + 1] = temp;
                 }
+            }
+            if (!isContinue) {
+                break;
             }
         }
     }
 
-    public static void select(int[] orgin) {
-        int temp = 0;
-        for (int i = 0; i < orgin.length; i++) {
-            temp = orgin[i];
-            for (int j = i; j < orgin.length; j++) {
-                if (orgin[j] < temp) {
-                    int  t = temp;
-                    temp = orgin[j];
-                    orgin[j] = t;
+    // 选择排序
+    public static void select(int[] origin) {
+        for (int i = 0; i < origin.length - 1; i++) {
+            int temp = origin[i]; // 当前最小数
+            int minIndex = i;   // 当前最小数的下标
+            for (int j = i + 1; j < origin.length; j++) {
+                if (origin[minIndex] > origin[j]) {
+                    temp = origin[j];
+                    minIndex = j;
                 }
             }
-            orgin[i] = temp;
+            origin[minIndex] = origin[i];
+            origin[i] = temp;
         }
-
     }
+
+    // 插入排序
+    public static void insert(int[] origin){}
 
 }
