@@ -1,21 +1,19 @@
 package cn.guzx.algorithm.sort;
 
 
+import java.util.Arrays;
 import java.util.Date;
 
 public class Demo {
     public static void main(String[] args) {
-        // int[] origin = new int[100000];
-        // for (int i = 0; i < 100000; i++) {
-        // origin[i] = (int) (Math.random() * 100000);
-        // }
+//         int[] origin = new int[100000];
+//         for (int i = 0; i < 100000; i++) {
+//         origin[i] = (int) (Math.random() * 100000);
+//         }
 
         int[] origin = new int[10];
-        // for (int i = 10; i > 0; i--) {
-        //     origin[10 - i] = i;
-        // }
-        origin[0] = 8;
-        origin[1] = 9;
+        origin[0] = 9;
+        origin[1] = 8;
         origin[2] = 1;
         origin[3] = 7;
         origin[4] = 2;
@@ -27,21 +25,16 @@ public class Demo {
 
         System.out.println("排序前：");
         System.out.println(new Date());
-        for (int i : origin) {
-            System.out.print(i + " ");
-        }
-        System.out.println();
+        System.out.println(Arrays.toString(origin));
 
         // bubb(origin); // 18s
         // select(origin); // 2s
         // insert(origin); // 4s
-        xier(origin);
+        hill(origin); //   8s
 
         System.out.println("排序后：");
         System.out.println(new Date());
-        for (int i : origin) {
-            System.out.print(i + " ");
-        }
+        System.out.println(Arrays.toString(origin));
 
     }
 
@@ -64,6 +57,7 @@ public class Demo {
             }
         }
     }
+
     // 选择排序
     public static void select(int[] origin) {
         int index;
@@ -82,6 +76,7 @@ public class Demo {
             origin[i] = value;
         }
     }
+
     // 插入排序
     public static void insert(int[] origin) {
 
@@ -99,21 +94,46 @@ public class Demo {
             }
         }
     }
+
     // 希尔排序
-    public static void xier(int[] origin) {
+    public static void hill(int[] origin) {
         int increment = origin.length / 2; // 增量
         int index = 0;
         int value = 0;
-        while (increment != 1) {
-            for (int i = 0; i < origin.length / 2; i++) {
-                value = origin[i];
-                index = i;
-                while (i + increment < origin.length && origin[index] > origin[index + increment]) {
-                    index = i + increment;
-                    value = origin[i + increment];
+        while (increment > 0) {
+            /*for (int i = increment; i < origin.length; i++) {
+                // 遍历各组数据
+                for (int j = i - increment; j >= 0; j -= increment) {
+                    if (origin[j] > origin[j + increment]) {
+                        value = origin[j + increment];
+                        origin[j + increment] = origin[j];
+                        origin[j] = value;
+                    }
                 }
-                origin[i + increment] = origin[i];
-                origin[i] = value;
+            }*/
+            /*for (int i = 0; i < origin.length; i++) {
+                // 遍历各组数据
+                for (int j = i + increment; j <origin.length; j += increment) {
+                    if (origin[i] > origin[j]) {
+                        value = origin[i];
+                        origin[i] = origin[j];
+                        origin[j] = value;
+                    }
+
+                }
+            }*/
+            for (int i = 0; i < origin.length; i++) {
+                // 遍历各组数据
+//                9817235460
+                index = i + increment; // 用于保存未排序的第一个数的下标
+                if (index < origin.length) {
+                    value = origin[index]; // 用于保存未排序的第一个数
+                    while (index < origin.length && origin[i] > origin[index]) {
+                        origin[index] = origin[i];
+                        index += increment;
+                    }
+                    origin[i] = value;
+                }
             }
             increment = increment / 2;
         }
