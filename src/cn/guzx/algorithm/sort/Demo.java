@@ -6,31 +6,21 @@ import java.util.Date;
 
 public class Demo {
     public static void main(String[] args) {
-//         int[] origin = new int[100000];
-//         for (int i = 0; i < 100000; i++) {
-//         origin[i] = (int) (Math.random() * 100000);
-//         }
+        int[] origin = new int[100000];
+        for (int i = 0; i < 100000; i++) {
+            origin[i] = (int) (Math.random() * 100000);
+        }
 
-        int[] origin = new int[10];
-        origin[0] = 9;
-        origin[1] = 8;
-        origin[2] = 1;
-        origin[3] = 7;
-        origin[4] = 2;
-        origin[5] = 3;
-        origin[6] = 5;
-        origin[7] = 4;
-        origin[8] = 6;
-        origin[9] = 0;
+//        int[] origin = new int[]{9, 8, 1, 7, 2, 3, 5, 4, 6, 0};
 
         System.out.println("排序前：");
         System.out.println(new Date());
-        System.out.println(Arrays.toString(origin));
+        // System.out.println(Arrays.toString(origin));
 
         // bubb(origin); // 18s
         // select(origin); // 2s
-        // insert(origin); // 4s
-        hill(origin); //   8s
+//        insert(origin); // 4s
+        hill(origin); // 交换法：13s  移动法：1s
 
         System.out.println("排序后：");
         System.out.println(new Date());
@@ -122,17 +112,17 @@ public class Demo {
 
                 }
             }*/
-            for (int i = 0; i < origin.length; i++) {
+            for (int i = increment; i < origin.length; i++) {
                 // 遍历各组数据
-//                9817235460
-                index = i + increment; // 用于保存未排序的第一个数的下标
+                // 98172 35460
+                index = i; // 用于保存未排序的第一个数的下标
+                value = origin[i]; // 用于保存未排序的第一个数
                 if (index < origin.length) {
-                    value = origin[index]; // 用于保存未排序的第一个数
-                    while (index < origin.length && origin[i] > origin[index]) {
-                        origin[index] = origin[i];
-                        index += increment;
+                    while (index - increment >= 0 && origin[index - increment] > value) {
+                        origin[index] = origin[index - increment];
+                        index -= increment;
                     }
-                    origin[i] = value;
+                    origin[index] = value;
                 }
             }
             increment = increment / 2;

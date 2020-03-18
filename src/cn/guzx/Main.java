@@ -1,6 +1,5 @@
 package cn.guzx;
 
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,7 +11,6 @@ public class Main {
         String[] word = words.split(",");
         int length = word.length;
         String resultString = word[0] + "#";
-        int index = 0; // 用于记录完全相等的数据
         if (words.length() == 0) {
             return 0;
         }
