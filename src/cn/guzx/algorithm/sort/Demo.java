@@ -129,4 +129,13 @@ public class Demo {
         }
     }
 
+    // 快速排序
+    public static void fast(int[] origin){
+
+    }
+
+    // 归并排序
+    public static void merge(){
+
+    }
 }
