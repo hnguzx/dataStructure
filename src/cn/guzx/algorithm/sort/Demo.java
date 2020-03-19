@@ -5,26 +5,27 @@ import java.util.Date;
 
 public class Demo {
     public static void main(String[] args) {
-        int[] origin = new int[8000000];
-        for (int i = 0; i < 8000000; i++) {
-            origin[i] = (int) (Math.random() * 100000);
-        }
+        // int[] origin = new int[8000000];
+        // for (int i = 0; i < 8000000; i++) {
+        // origin[i] = (int) (Math.random() * 100000);
+        // }
 
-//         int[] origin = new int[] { 9, 8, 1, 7, 2, 3, 5, 4, 6, 0 };
+        int[] origin = new int[] { 9, 8, 1, 7, 2, 3, 5, 4, 6, 0 };
 
         System.out.println("排序前：");
         System.out.println(new Date());
-//         System.out.println(Arrays.toString(origin));
+        System.out.println(Arrays.toString(origin));
 
         // bubb(origin); // 18s
         // select(origin); // 2s
         // insert(origin); // 4s
-//         hill(origin); // 交换法：13s 移动法：<1s 8000000 4s
-        fast(origin, 0, origin.length - 1); // <1s 8000000 2s
+        // hill(origin); // 交换法：13s 移动法：<1s 8000000 4s
+        // fast(origin, 0, origin.length - 1); // <1s 8000000 2s
+        merge(origin, 0, origin.length - 1);
 
         System.out.println("排序后：");
         System.out.println(new Date());
-//         System.out.println(Arrays.toString(origin));
+        System.out.println(Arrays.toString(origin));
 
     }
 
@@ -127,15 +128,15 @@ public class Demo {
         int middleValue = origin[(left + right) / 2]; // 用于保存中间值
         int temp = 0; // 用于交换位置
 
-        // 说明还没完成所有元素的排序
-        while (l < r ) {
-            // 左边元素小于中间元素，左指针右移
+        // 完成一次交换
+        while (l < r) {
+            // 左边元素小于中间元素，左指针右移，直到找到大于中间元素的数据
             while (origin[l] < middleValue) {
-                l ++;
+                l++;
             }
-            // 右边元素大于中间元素，右指针左移
+            // 右边元素大于中间元素，右指针左移，直到找到小于中间元素的数据
             while (origin[r] > middleValue) {
-                r --;
+                r--;
             }
 
             // 遍历完所有元素
@@ -148,13 +149,13 @@ public class Demo {
             origin[l] = origin[r];
             origin[r] = temp;
 
-            // 右边有与中间元素相等的元素
-            if (origin[l] == middleValue) {
-                r--;
-            }
             // 左边有与中间元素相等的元素
-            if (origin[r] == middleValue) {
+            if (origin[l] == middleValue) {
                 l++;
+            }
+            // 右边有与中间元素相等的元素
+            if (origin[r] == middleValue) {
+                r--;
             }
         }
         // 左边两边同时走到中间，防止死循环
@@ -172,8 +173,47 @@ public class Demo {
         }
     }
 
-    // 归并排序
-    public static void merge() {
+    // 归并排序 分治
+    public static void merge(int[] origin, int left, int right) {
+        // 说明分解后的数组长度大于1
+        if (left < right) {
+            // 通过递归将原数组分解
+            int mid = (right + left) / 2;
+            // 向左分解
+            merge(origin, left, mid);
+            // 向右分解
+            merge(origin, mid + 1, right);
+            // 进行合并
+            int l = left;
+            int r = mid + 1;
+            int t = 0;
 
+            // 遍历两部分
+            // 用于临时保存过程中的数据
+            int[] temp = new int[origin.length];
+
+            while (l <= mid && r <= right) {
+                if (origin[l] < origin[r]) {
+                    temp[t++] = origin[l++];
+                } else {
+                    temp[t++] = origin[r++];
+                }
+            }
+
+            while (l <= mid) {
+                temp[t++] = origin[l++];
+            }
+            while (r <= right) {
+                temp[t++] = origin[r++];
+            }
+
+            t = 0;
+            int tempLeft = left;
+            System.out.println("tempLeft：" + tempLeft + "right：" + right);
+            while (tempLeft <= right) {
+                origin[tempLeft++] = temp[t++];
+            }
+            System.out.println(Arrays.toString(origin));
+        }
     }
 }
