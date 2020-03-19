@@ -6,12 +6,12 @@ import java.util.Date;
 
 public class Demo {
     public static void main(String[] args) {
-        int[] origin = new int[100000];
-        for (int i = 0; i < 100000; i++) {
-            origin[i] = (int) (Math.random() * 100000);
-        }
+//        int[] origin = new int[100000];
+//        for (int i = 0; i < 100000; i++) {
+//            origin[i] = (int) (Math.random() * 100000);
+//        }
 
-//        int[] origin = new int[]{9, 8, 1, 7, 2, 3, 5, 4, 6, 0};
+        int[] origin = new int[]{9, 8, 1, 7, 2, 3, 5, 4, 6, 0};
 
         System.out.println("排序前：");
         System.out.println(new Date());
@@ -114,7 +114,6 @@ public class Demo {
             }*/
             for (int i = increment; i < origin.length; i++) {
                 // 遍历各组数据
-                // 98172 35460
                 index = i; // 用于保存未排序的第一个数的下标
                 value = origin[i]; // 用于保存未排序的第一个数
                 if (index < origin.length) {
