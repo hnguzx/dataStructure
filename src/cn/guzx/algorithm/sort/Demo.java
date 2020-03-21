@@ -10,7 +10,7 @@ public class Demo {
         // origin[i] = (int) (Math.random() * 100000);
         // }
 
-        int[] origin = new int[] { 9, 8, 1, 7, 2, 3, 5, 4, 6, 0 };
+        int[] origin = new int[] { 9, 8, 1, 7, 2, 3, 5, 4, 6};
 
         System.out.println("排序前：");
         System.out.println(new Date());
@@ -182,7 +182,7 @@ public class Demo {
             // 向左分解
             merge(origin, left, mid);
             // 向右分解
-            merge(origin, mid + 1, right);
+            merge(origin, mid+1, right);
             // 进行合并
             int l = left;
             int r = mid + 1;
@@ -215,5 +215,10 @@ public class Demo {
             }
             System.out.println(Arrays.toString(origin));
         }
+    }
+
+    // 基数排序（桶排序）
+    public static void bucket(int[] origin){
+         
     }
 }
