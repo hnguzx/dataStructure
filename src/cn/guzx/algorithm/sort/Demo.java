@@ -5,27 +5,29 @@ import java.util.Date;
 
 public class Demo {
     public static void main(String[] args) {
-        // int[] origin = new int[8000000];
-        // for (int i = 0; i < 8000000; i++) {
-        // origin[i] = (int) (Math.random() * 100000);
-        // }
+        int[] origin = new int[80000];
+        for (int i = 0; i < 80000; i++) {
+            origin[i] = (int) (Math.random() * 10000);
+        }
 
-        int[] origin = new int[] { 9, 8, 1, 7, 2, 3, 5, 4, 6};
+//        int[] origin = new int[]{9, 2, 1, 7, 2, 3, 5, 4, 6, 0, 12};
+//        int[] origin = new int[]{53, 3, 542, 748, 14, 214};
 
         System.out.println("排序前：");
-        System.out.println(new Date());
-        System.out.println(Arrays.toString(origin));
-
-        // bubb(origin); // 18s
-        // select(origin); // 2s
-        // insert(origin); // 4s
-        // hill(origin); // 交换法：13s 移动法：<1s 8000000 4s
-        // fast(origin, 0, origin.length - 1); // <1s 8000000 2s
-        merge(origin, 0, origin.length - 1);
+        System.out.println(new Date().getTime());
+//        System.out.println(Arrays.toString(origin));
+        // 八万个随机数据的测试时间
+//        bubble(origin); // 9.3
+//        select(origin); // 1.7s
+//        insert(origin); // 0.5s
+//        hill(origin); // 交换法：6.7s 移动法：0.01s
+//         fast(origin, 0, origin.length - 1); // 0.03s
+//        merge(origin, 0, origin.length - 1); // 2.5s
+        bucket(origin); // 0.01s
 
         System.out.println("排序后：");
-        System.out.println(new Date());
-        System.out.println(Arrays.toString(origin));
+        System.out.println(new Date().getTime());
+//        System.out.println(Arrays.toString(origin));
 
     }
 
@@ -80,9 +82,7 @@ public class Demo {
                 origin[index + 1] = origin[index];
                 index--;
             }
-            if (index != i) {
-                origin[index + 1] = value;
-            }
+            origin[index + 1] = value;
         }
     }
 
@@ -92,19 +92,16 @@ public class Demo {
         int index = 0;
         int value = 0;
         while (increment > 0) {
-            /*
-             * for (int i = increment; i < origin.length; i++) { // 遍历各组数据 for (int j = i -
-             * increment; j >= 0; j -= increment) { if (origin[j] > origin[j + increment]) {
-             * value = origin[j + increment]; origin[j + increment] = origin[j]; origin[j] =
-             * value; } } }
-             */
-            /*
-             * for (int i = 0; i < origin.length; i++) { // 遍历各组数据 for (int j = i +
-             * increment; j <origin.length; j += increment) { if (origin[i] > origin[j]) {
-             * value = origin[i]; origin[i] = origin[j]; origin[j] = value; }
-             *
-             * } }
-             */
+//            for (int i = increment; i < origin.length; i++) {
+//                // 遍历各组数据
+//                for (int j = i - increment; j >= 0; j -= increment) {
+//                    if (origin[j] > origin[j + increment]) {
+//                        value = origin[j + increment];
+//                        origin[j + increment] = origin[j];
+//                        origin[j] = value;
+//                    }
+//                }
+//            }
             for (int i = increment; i < origin.length; i++) {
                 // 遍历各组数据
                 index = i; // 用于保存未排序的第一个数的下标
@@ -182,7 +179,7 @@ public class Demo {
             // 向左分解
             merge(origin, left, mid);
             // 向右分解
-            merge(origin, mid+1, right);
+            merge(origin, mid + 1, right);
             // 进行合并
             int l = left;
             int r = mid + 1;
@@ -209,16 +206,45 @@ public class Demo {
 
             t = 0;
             int tempLeft = left;
-            System.out.println("tempLeft：" + tempLeft + "right：" + right);
+//            System.out.println("tempLeft：" + tempLeft + "right：" + right);
             while (tempLeft <= right) {
                 origin[tempLeft++] = temp[t++];
             }
-            System.out.println(Arrays.toString(origin));
+//            System.out.println(Arrays.toString(origin));
         }
     }
 
     // 基数排序（桶排序）
-    public static void bucket(int[] origin){
-         
+    public static void bucket(int[] origin) {
+        int bocket[][] = new int[10][origin.length]; // 桶
+        int temp[] = new int[bocket.length]; //用于保存每个桶中有效数据的个数
+
+        // 获取最大数的位数
+        int max = origin[0];
+        for (int l = 0; l < origin.length; l++) {
+            if (origin[l] > max) {
+                max = origin[l];
+            }
+        }
+        int lenght = (max + "").length();
+
+        for (int k = 0, n = 1; k < lenght; k++, n *= 10) {
+            // 将数据放入桶中
+            for (int i = 0; i < origin.length; i++) {
+                int digit = origin[i] / n % 10;
+                bocket[digit][temp[digit]] = origin[i];
+                temp[digit]++;
+            }
+            // 将数据从桶中取出
+            int count = 0;
+            for (int m = 0; m < temp.length; m++) {
+                if (temp[m] != 0) {
+                    for (int j = 0; j < temp[m]; j++) {
+                        origin[count++] = bocket[m][j];
+                    }
+                }
+                temp[m] = 0;
+            }
+        }
     }
 }
