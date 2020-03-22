@@ -188,7 +188,7 @@ public class Demo {
             // 遍历两部分
             // 用于临时保存过程中的数据
             int[] temp = new int[origin.length];
-
+            // 左右一起放置
             while (l <= mid && r <= right) {
                 if (origin[l] < origin[r]) {
                     temp[t++] = origin[l++];
@@ -196,21 +196,20 @@ public class Demo {
                     temp[t++] = origin[r++];
                 }
             }
-
+            // 当右边已经全部放置完毕后
             while (l <= mid) {
                 temp[t++] = origin[l++];
             }
+            // 当左边已经全部放置完毕后
             while (r <= right) {
                 temp[t++] = origin[r++];
             }
-
+            // 将临时数组中的数组赋值回原来的数组中
             t = 0;
             int tempLeft = left;
-//            System.out.println("tempLeft：" + tempLeft + "right：" + right);
             while (tempLeft <= right) {
                 origin[tempLeft++] = temp[t++];
             }
-//            System.out.println(Arrays.toString(origin));
         }
     }
 
@@ -231,6 +230,7 @@ public class Demo {
         for (int k = 0, n = 1; k < lenght; k++, n *= 10) {
             // 将数据放入桶中
             for (int i = 0; i < origin.length; i++) {
+                // 放入哪个桶中
                 int digit = origin[i] / n % 10;
                 bocket[digit][temp[digit]] = origin[i];
                 temp[digit]++;
