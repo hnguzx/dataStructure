@@ -83,7 +83,6 @@ public class Demo {
 
     // 插值查找
     public static int interpolationFind(int[] origin,int left,int right, int value){
-        System.out.println("查找");
         if(left>right || value>origin[origin.length-1] || value<origin[0]){
             return -1;
         }
