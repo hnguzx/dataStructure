@@ -149,6 +149,15 @@ class Node {
         return this;
     }
 
+    // 前序删除
+    public void preDelete(int id){}
+
+    // 中序删除
+    public void midDelete(int id){}
+
+    // 后序删除
+    public void lastDelete(int id){}
+
     @Override
     public String toString() {
         return "Node{" +
@@ -201,5 +210,6 @@ class Tree {
     public Node lastFind(int id){
         return this.root.lastFind(id);
     }
+
 
 }
