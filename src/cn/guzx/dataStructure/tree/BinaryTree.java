@@ -11,8 +11,12 @@ public class BinaryTree {
         Node node3 = new Node();
         node3.setId(3);
         node3.setName("ccc");
+        Node node4 = new Node();
+        node4.setId(4);
+        node4.setName("ddd");
         node1.setLeft(node2);
         node1.setRight(node3);
+        node3.setRight(node4);
 
         Tree tree = new Tree(node1);
 //        tree.preTraverse();
@@ -20,7 +24,11 @@ public class BinaryTree {
 //        tree.lastTraverse();
 //        System.out.println(tree.preFind(3));
 //        System.out.println(tree.minFind(1));
-        System.out.println(tree.lastFind(3));
+//        System.out.println(tree.lastFind(3));
+        tree.preTraverse();
+        tree.delete(3);
+        System.out.println("删除后");
+        tree.preTraverse();
     }
 }
 
@@ -149,14 +157,23 @@ class Node {
         return this;
     }
 
-    // 前序删除
-    public void preDelete(int id){}
-
-    // 中序删除
-    public void midDelete(int id){}
-
-    // 后序删除
-    public void lastDelete(int id){}
+    // 节点删除
+    public void delete(int id) {
+        if (this.getLeft() != null && this.getLeft().getId() == id) {
+            this.setLeft(null);
+            return;
+        }
+        if (this.getRight() != null && this.getRight().getId() == id) {
+            this.setRight(null);
+            return;
+        }
+        if(this.getLeft()!=null){
+            delete(id);
+        }
+        if(this.getRight()!=null){
+            delete(id);
+        }
+    }
 
     @Override
     public String toString() {
@@ -207,9 +224,21 @@ class Tree {
     }
 
     // 后序查找
-    public Node lastFind(int id){
+    public Node lastFind(int id) {
         return this.root.lastFind(id);
     }
 
+    // 节点删除
+    public void delete(int id){
+        if(this.root==null){
+            System.out.println("二叉树为空！");
+            return;
+        }
+        if(this.root.getId()==id){
+            this.root = null;
+            return;
+        }
+        this.root.delete(id);
+    }
 
 }
