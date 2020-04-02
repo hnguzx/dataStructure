@@ -38,20 +38,22 @@ public class CluesBinaryTree {
         node3.setLeft(node6);
 
         Tree2 tree2 = new Tree2();
-        tree2.midThreadBinaryTree(node1);
-        tree2.midList(node1);
+//        tree2.midThreadBinaryTree(node1);
+//        tree2.midList(node1);
 //        tree2.beforeThreadBinaryTree(node1);
-//        tree2.afterThreadBinaryTree(node1);
+//        tree2.beforeList(node1);
+        tree2.afterThreadBinaryTree(node1);
+        tree2.afterList(node1);
     }
 }
 
 class Tree2 {
 
-//    private Node2 root;
     private Node2 pre; // 用于指向当前节点的前一个前驱节点
 
     // 线索化二叉树(中序)
     public void midThreadBinaryTree(Node2 node2) {
+        // node2为当前节点
         if (node2 == null) {
             return;
         }
@@ -67,7 +69,7 @@ class Tree2 {
         }
 
         // 处理右子树和后继节点
-        if (pre != null && node2.getRight() == null) {
+        if (pre != null && pre.getRight() == null) {
             pre.setRight(node2);
             pre.setRightType(1);
         }
@@ -96,7 +98,6 @@ class Tree2 {
             pre.setRightType(1);
         }
 
-        System.out.println(node2);
         pre = node2;
 
         // 线索化左子树,!=1说明没有前驱节点
@@ -133,25 +134,69 @@ class Tree2 {
             pre.setRightType(1);
         }
 
-        System.out.println(node2);
         pre = node2;
     }
 
     // 遍历线索化二叉树(中序)
-    public void midList(Node2 node2){
+    public void midList(Node2 node2) {
         Node2 temp = node2;
-        while (temp!=null){
+        while (temp != null) {
             // 找到最左边的节点
-            while (temp.getLeftType()==0){
+            while (temp.getLeftType() == 0) {
                 temp = temp.getLeft();
             }
             System.out.println(temp);
             // 如果当前节点的右子节点为后继节点
-            while (temp.getRightType() == 1){
+            while (temp.getRightType() == 1) {
                 temp = temp.getRight();
                 System.out.println(temp);
             }
             temp = temp.getRight();
+        }
+    }
+
+    // 遍历线索化二叉树(前序)
+    public void beforeList(Node2 node2) {
+        Node2 temp = node2;
+        while (temp != null) {
+            // 遍历所有左子节点
+            while (temp.getLeftType() == 0) {
+                System.out.println(temp);
+                temp = temp.getLeft();
+            }
+            // 输出后继节点
+            System.out.println(temp);
+            temp = temp.getRight();
+        }
+    }
+
+    // 遍历线索化二叉树(后序)
+    public void afterList(Node2 node2) {
+        Node2 temp = node2;
+        while (temp != null && temp.getLeftType() == 0) {
+            // 遍历所有左子节点
+            temp = temp.getLeft();
+        }
+
+        while (temp != null) {
+            if(temp.getRightType()==1){
+                System.out.println(temp);
+                pre = temp;
+                temp = temp.getRight();
+            }else{
+                // 上个处理的节点是当前节点的右节点
+                if(temp.getRight() == pre){
+                    System.out.println(temp);
+                    if(temp==node2){
+                        return;
+                    }
+                    pre = temp;
+                    temp = temp.getRight();
+                }else{
+
+                }
+            }
+
         }
     }
 
