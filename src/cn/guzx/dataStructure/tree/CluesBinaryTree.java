@@ -1,5 +1,7 @@
 package cn.guzx.dataStructure.tree;
 
+import cn.guzx.temp;
+
 public class CluesBinaryTree {
     public static void main(String[] args) {
         Node2 node1 = new Node2();
@@ -38,10 +40,10 @@ public class CluesBinaryTree {
         node3.setLeft(node6);
 
         Tree2 tree2 = new Tree2();
-//        tree2.midThreadBinaryTree(node1);
-//        tree2.midList(node1);
-//        tree2.beforeThreadBinaryTree(node1);
-//        tree2.beforeList(node1);
+        // tree2.midThreadBinaryTree(node1);
+        // tree2.midList(node1);
+        // tree2.beforeThreadBinaryTree(node1);
+        // tree2.beforeList(node1);
         tree2.afterThreadBinaryTree(node1);
         tree2.afterList(node1);
     }
@@ -134,6 +136,14 @@ class Tree2 {
             pre.setRightType(1);
         }
 
+        if (node2.getLeft() != null) {
+            node2.getLeft().setParent(node2);
+        }
+
+        if (node2.getRight() != null) {
+            node2.getRight().setParent(node2);
+        }
+
         pre = node2;
     }
 
@@ -173,27 +183,32 @@ class Tree2 {
     // 遍历线索化二叉树(后序)
     public void afterList(Node2 node2) {
         Node2 temp = node2;
+        // 后序遍历的开始节点一定是最左子节点
         while (temp != null && temp.getLeftType() == 0) {
-            // 遍历所有左子节点
             temp = temp.getLeft();
         }
 
         while (temp != null) {
-            if(temp.getRightType()==1){
+            // 一直查找后继节点，直到下个节点右指针指向的不是后继指针
+            if (temp.getRightType() == 1) {
                 System.out.println(temp);
                 pre = temp;
                 temp = temp.getRight();
-            }else{
+            } else {
                 // 上个处理的节点是当前节点的右节点
-                if(temp.getRight() == pre){
+                if (temp.getRight() == pre) {
                     System.out.println(temp);
-                    if(temp==node2){
+                    if (temp == node2) {
                         return;
                     }
                     pre = temp;
+                    temp = temp.getParent();
+                } else {
                     temp = temp.getRight();
-                }else{
-
+                    // 如果从左节点的进入则找到有子树的最左节点
+                    while (temp != null && temp.getLeftType() == 0) {
+                        temp = temp.getLeft();
+                    }
                 }
             }
 
@@ -207,8 +222,9 @@ class Node2 {
     private String name;
     private Node2 right;
     private Node2 left;
+    private Node2 parent;
     private int rightType; // 0表示右子树，1表示后继节点
-    private int leftType;   // 0表示左子树，1表示前驱节点
+    private int leftType; // 0表示左子树，1表示前驱节点
 
     public int getRightType() {
         return rightType;
@@ -250,6 +266,14 @@ class Node2 {
         this.right = right;
     }
 
+    public Node2 getParent() {
+        return parent;
+    }
+
+    public void setParent(Node2 parent) {
+        this.parent = parent;
+    }
+
     public Node2 getLeft() {
         return left;
     }
@@ -260,9 +284,6 @@ class Node2 {
 
     @Override
     public String toString() {
-        return "Node2{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                '}';
+        return "Node2{" + "id=" + id + ", name='" + name + '\'' + '}';
     }
 }
