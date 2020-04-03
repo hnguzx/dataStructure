@@ -5,29 +5,29 @@ import java.util.Date;
 
 public class Demo {
     public static void main(String[] args) {
-        int[] origin = new int[80000];
-        for (int i = 0; i < 80000; i++) {
-            origin[i] = (int) (Math.random() * 10000);
-        }
+        // int[] origin = new int[80000];
+        // for (int i = 0; i < 80000; i++) {
+        // origin[i] = (int) (Math.random() * 10000);
+        // }
 
-//        int[] origin = new int[]{9, 2, 1, 7, 2, 3, 5, 4, 6, 0, 12};
-//        int[] origin = new int[]{53, 3, 542, 748, 14, 214};
+        int[] origin = new int[] { 9, 2, 1, 7, 2, 3, 5, 4, 6, 0, 12 };
+        // int[] origin = new int[]{53, 3, 542, 748, 14, 214};
 
         System.out.println("排序前：");
         System.out.println(new Date().getTime());
-//        System.out.println(Arrays.toString(origin));
+        // System.out.println(Arrays.toString(origin));
         // 八万个随机数据的测试时间
-//        bubble(origin); // 9.3
-//        select(origin); // 1.7s
-//        insert(origin); // 0.5s
-//        hill(origin); // 交换法：6.7s 移动法：0.01s
-//         fast(origin, 0, origin.length - 1); // 0.03s
-//        merge(origin, 0, origin.length - 1); // 2.5s
+        // bubble(origin); // 9.3
+        // select(origin); // 1.7s
+        // insert(origin); // 0.5s
+        // hill(origin); // 交换法：6.7s 移动法：0.01s
+        // fast(origin, 0, origin.length - 1); // 0.03s
+        // merge(origin, 0, origin.length - 1); // 2.5s
         bucket(origin); // 0.01s
 
         System.out.println("排序后：");
         System.out.println(new Date().getTime());
-//        System.out.println(Arrays.toString(origin));
+        // System.out.println(Arrays.toString(origin));
 
     }
 
@@ -92,16 +92,16 @@ public class Demo {
         int index = 0;
         int value = 0;
         while (increment > 0) {
-//            for (int i = increment; i < origin.length; i++) {
-//                // 遍历各组数据
-//                for (int j = i - increment; j >= 0; j -= increment) {
-//                    if (origin[j] > origin[j + increment]) {
-//                        value = origin[j + increment];
-//                        origin[j + increment] = origin[j];
-//                        origin[j] = value;
-//                    }
-//                }
-//            }
+            // for (int i = increment; i < origin.length; i++) {
+            // // 遍历各组数据
+            // for (int j = i - increment; j >= 0; j -= increment) {
+            // if (origin[j] > origin[j + increment]) {
+            // value = origin[j + increment];
+            // origin[j + increment] = origin[j];
+            // origin[j] = value;
+            // }
+            // }
+            // }
             for (int i = increment; i < origin.length; i++) {
                 // 遍历各组数据
                 index = i; // 用于保存未排序的第一个数的下标
@@ -216,7 +216,7 @@ public class Demo {
     // 基数排序（桶排序）
     public static void bucket(int[] origin) {
         int bocket[][] = new int[10][origin.length]; // 桶
-        int temp[] = new int[bocket.length]; //用于保存每个桶中有效数据的个数
+        int temp[] = new int[bocket.length]; // 用于保存每个桶中有效数据的个数
 
         // 获取最大数的位数
         int max = origin[0];
@@ -246,5 +246,35 @@ public class Demo {
                 temp[m] = 0;
             }
         }
+    }
+
+    // 堆排序
+    public static void heap(int[] origin) {
+        // 叶子节点不用管，从最后一个非叶子节点开始 index = origin.length / 2 - 1
+        // 找到该子树中的最大节点，放到子树的堆顶
+        int temp = 0;
+        // 将数组构建成堆
+        for (int i = origin.length / 2 - 1; i >= 0; i--) {
+
+        }
+    }
+
+    // 将数组调整为大顶堆
+    public static void adjustArray(int arr[], int i, int length) {
+        int temp = arr[i]; // 最后一个非叶子节点
+
+        for (int k = i * 2 + 1; k < length; i = k * 2 + 1) {
+            if(k+1<length&& arr[k]<arr[k+1]){ // 左节点小于右节点
+                k++;
+            }
+            if(arr[k]>temp){ // 找到该子树中最大的一个节点,将其赋值给最后一棵子树的树顶
+                arr[i] = arr[k];
+                i=k;
+            }else{
+                break; // 原来的树顶就是最大的值
+            }
+        }
+
+        arr[i] = temp; // 将开始树顶的位置赋值给被交换的节点
     }
 }
