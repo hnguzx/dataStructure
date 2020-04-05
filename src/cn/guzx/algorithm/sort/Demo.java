@@ -5,12 +5,12 @@ import java.util.Date;
 
 public class Demo {
     public static void main(String[] args) {
-        // int[] origin = new int[80000];
-        // for (int i = 0; i < 80000; i++) {
-        // origin[i] = (int) (Math.random() * 10000);
-        // }
+        int[] origin = new int[8000000];
+        for (int i = 0; i < 8000000; i++) {
+        origin[i] = (int) (Math.random() * 1000000);
+        }
 
-        int[] origin = new int[] { 9, 2, 1, 7, 2, 3, 5, 4, 6, 0, 12 };
+        // int[] origin = new int[] { 9, 2, 1, 7, 2, 3, 5, 4, 6, 0, 12 };
         // int[] origin = new int[]{53, 3, 542, 748, 14, 214};
 
         System.out.println("排序前：");
@@ -20,10 +20,11 @@ public class Demo {
         // bubble(origin); // 9.3
         // select(origin); // 1.7s
         // insert(origin); // 0.5s
-        // hill(origin); // 交换法：6.7s 移动法：0.01s
-        // fast(origin, 0, origin.length - 1); // 0.03s
+        // hill(origin); // 交换法：6.7s 移动法：0.01s 800万 3s
+        // fast(origin, 0, origin.length - 1); // 0.03s 800万 1.4s
         // merge(origin, 0, origin.length - 1); // 2.5s
-        bucket(origin); // 0.01s
+        // bucket(origin); // 0.01s 80万 0.1s 800万 0.6s
+        heap(origin); // 0.02s 80万 0.23s 800万 2.3s
 
         System.out.println("排序后：");
         System.out.println(new Date().getTime());
@@ -255,16 +256,26 @@ public class Demo {
         int temp = 0;
         // 将数组构建成堆
         for (int i = origin.length / 2 - 1; i >= 0; i--) {
-
+            adjustArray(origin, i, origin.length);
         }
+
+        // 将堆顶元素与末尾元素进行交换，将最大元素沉到数组尾部
+        for(int j = origin.length-1;j>0;j--){
+            temp = origin[j];
+            origin[j] = origin[0];
+            origin[0] = temp;
+            // 对数组剩下的元素继续进行整理，将其整理为大顶堆
+            adjustArray(origin, 0, j);
+        }
+
     }
 
-    // 将数组调整为大顶堆
+    // 将一个最多三个数的数组组成堆的数组调整为大顶堆
     public static void adjustArray(int arr[], int i, int length) {
         int temp = arr[i]; // 最后一个非叶子节点
 
-        for (int k = i * 2 + 1; k < length; i = k * 2 + 1) {
-            if(k+1<length&& arr[k]<arr[k+1]){ // 左节点小于右节点
+        for (int k = i * 2 + 1; k < length; k = k * 2 + 1) {
+            if(k+1<length && arr[k]<arr[k+1]){ // 左节点小于右节点
                 k++;
             }
             if(arr[k]>temp){ // 找到该子树中最大的一个节点,将其赋值给最后一棵子树的树顶
