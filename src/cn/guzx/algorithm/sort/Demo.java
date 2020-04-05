@@ -5,17 +5,17 @@ import java.util.Date;
 
 public class Demo {
     public static void main(String[] args) {
-        int[] origin = new int[8000000];
-        for (int i = 0; i < 8000000; i++) {
-        origin[i] = (int) (Math.random() * 1000000);
-        }
+        // int[] origin = new int[8000000];
+        // for (int i = 0; i < 8000000; i++) {
+        // origin[i] = (int) (Math.random() * 1000000);
+        // }
 
         // int[] origin = new int[] { 9, 2, 1, 7, 2, 3, 5, 4, 6, 0, 12 };
-        // int[] origin = new int[]{53, 3, 542, 748, 14, 214};
+        int[] origin = new int[] { 3, 2, 0, 2, 9, 1, 5 };
 
         System.out.println("排序前：");
         System.out.println(new Date().getTime());
-        // System.out.println(Arrays.toString(origin));
+        System.out.println(Arrays.toString(origin));
         // 八万个随机数据的测试时间
         // bubble(origin); // 9.3
         // select(origin); // 1.7s
@@ -23,19 +23,19 @@ public class Demo {
         // hill(origin); // 交换法：6.7s 移动法：0.01s 800万 3s
         // fast(origin, 0, origin.length - 1); // 0.03s 800万 1.4s
         // merge(origin, 0, origin.length - 1); // 2.5s
-        // bucket(origin); // 0.01s 80万 0.1s 800万 0.6s
-        heap(origin); // 0.02s 80万 0.23s 800万 2.3s
+        bucket(origin); // 0.01s 80万 0.1s 800万 0.6s
+        // heap(origin); // 0.02s 80万 0.23s 800万 2.3s
 
         System.out.println("排序后：");
         System.out.println(new Date().getTime());
-        // System.out.println(Arrays.toString(origin));
+        System.out.println(Arrays.toString(origin));
 
     }
 
     // 冒泡排序
     public static void bubble(int[] origin) {
         int temp = 0;
-        boolean isContinue = false;
+        boolean isContinue = false; // 标志着一个循环数组的排序是否有变化，如果没有，可提前结束排序
         for (int j = 0; j < origin.length; j++) {
             isContinue = false;
             for (int i = 0; i < origin.length - 1 - j; i++) {
@@ -54,8 +54,8 @@ public class Demo {
 
     // 选择排序
     public static void select(int[] origin) {
-        int index;
-        int value;
+        int index; // 当前要进行排序的数据的下边
+        int value; // 当前要进行排序的数据的值
 
         for (int i = 0; i < origin.length; i++) {
             index = i;
@@ -73,9 +73,9 @@ public class Demo {
 
     // 插入排序
     public static void insert(int[] origin) {
+        int index; // 数组中已排序的部分的最后一个数组的下标
+        int value; // 数组中未排序的部分的第一个数组的值
 
-        int index;
-        int value;
         for (int i = 1; i < origin.length; i++) {
             index = i - 1;
             value = origin[i];
@@ -89,24 +89,14 @@ public class Demo {
 
     // 希尔排序
     public static void hill(int[] origin) {
-        int increment = origin.length / 2; // 增量
-        int index = 0;
-        int value = 0;
+        int increment = origin.length / 2; // 增量，即要将原数组分解成小数组的数量
+        int index = 0; // 用于保存后面的第一个数的下标
+        int value = 0; // 用于保存后面的第一个数
         while (increment > 0) {
-            // for (int i = increment; i < origin.length; i++) {
-            // // 遍历各组数据
-            // for (int j = i - increment; j >= 0; j -= increment) {
-            // if (origin[j] > origin[j + increment]) {
-            // value = origin[j + increment];
-            // origin[j + increment] = origin[j];
-            // origin[j] = value;
-            // }
-            // }
-            // }
             for (int i = increment; i < origin.length; i++) {
                 // 遍历各组数据
-                index = i; // 用于保存未排序的第一个数的下标
-                value = origin[i]; // 用于保存未排序的第一个数
+                index = i;
+                value = origin[i];
                 if (index < origin.length) {
                     while (index - increment >= 0 && origin[index - increment] > value) {
                         origin[index] = origin[index - increment];
@@ -121,8 +111,9 @@ public class Demo {
 
     // 快速排序
     public static void fast(int[] origin, int left, int right) {
-        int l = left;
-        int r = right;
+        // 将数组分为左右两部分
+        int l = left; // 左边起始下标
+        int r = right; // 右边起始下标
         int middleValue = origin[(left + right) / 2]; // 用于保存中间值
         int temp = 0; // 用于交换位置
 
@@ -149,11 +140,11 @@ public class Demo {
 
             // 左边有与中间元素相等的元素
             if (origin[l] == middleValue) {
-                l++;
+                r--;
             }
             // 右边有与中间元素相等的元素
             if (origin[r] == middleValue) {
-                r--;
+                l++;
             }
         }
         // 左边两边同时走到中间，防止死循环
@@ -181,16 +172,17 @@ public class Demo {
             merge(origin, left, mid);
             // 向右分解
             merge(origin, mid + 1, right);
-            // 进行合并
+
+            // 从左至右进行合并
             int l = left;
             int r = mid + 1;
             int t = 0;
-
             // 遍历两部分
             // 用于临时保存过程中的数据
             int[] temp = new int[origin.length];
             // 左右一起放置
             while (l <= mid && r <= right) {
+                // 将小的数据优先放入临时数组
                 if (origin[l] < origin[r]) {
                     temp[t++] = origin[l++];
                 } else {
@@ -233,8 +225,7 @@ public class Demo {
             for (int i = 0; i < origin.length; i++) {
                 // 放入哪个桶中
                 int digit = origin[i] / n % 10;
-                bocket[digit][temp[digit]] = origin[i];
-                temp[digit]++;
+                bocket[digit][temp[digit]++] = origin[i];
             }
             // 将数据从桶中取出
             int count = 0;
@@ -260,7 +251,7 @@ public class Demo {
         }
 
         // 将堆顶元素与末尾元素进行交换，将最大元素沉到数组尾部
-        for(int j = origin.length-1;j>0;j--){
+        for (int j = origin.length - 1; j > 0; j--) {
             temp = origin[j];
             origin[j] = origin[0];
             origin[0] = temp;
@@ -275,13 +266,13 @@ public class Demo {
         int temp = arr[i]; // 最后一个非叶子节点
 
         for (int k = i * 2 + 1; k < length; k = k * 2 + 1) {
-            if(k+1<length && arr[k]<arr[k+1]){ // 左节点小于右节点
+            if (k + 1 < length && arr[k] < arr[k + 1]) { // 左节点小于右节点
                 k++;
             }
-            if(arr[k]>temp){ // 找到该子树中最大的一个节点,将其赋值给最后一棵子树的树顶
+            if (arr[k] > temp) { // 找到该子树中最大的一个节点,将其赋值给最后一棵子树的树顶
                 arr[i] = arr[k];
-                i=k;
-            }else{
+                i = k;
+            } else {
                 break; // 原来的树顶就是最大的值
             }
         }
