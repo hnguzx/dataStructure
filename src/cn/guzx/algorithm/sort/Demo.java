@@ -225,7 +225,8 @@ public class Demo {
             for (int i = 0; i < origin.length; i++) {
                 // 放入哪个桶中
                 int digit = origin[i] / n % 10;
-                bocket[digit][temp[digit]++] = origin[i];
+                bocket[digit][temp[digit]] = origin[i];
+                temp[digit]++;
             }
             // 将数据从桶中取出
             int count = 0;
