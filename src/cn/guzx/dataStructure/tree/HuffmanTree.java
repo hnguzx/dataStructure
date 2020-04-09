@@ -5,14 +5,18 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-public class huffmanTree {
+public class HuffmanTree {
     public static void main(String[] args) {
         int arr[] = new int[]{7, 8, 9, 6, 1, 3};
         HuffmanNode node = createHuffmanTree(arr);
         node.preOrder();
     }
 
-    // 创建赫夫曼树，并返回赫夫曼树的根节点
+    /**
+     * 创建赫夫曼树，并返回赫夫曼树的根节点
+     * @param arr
+     * @return
+     */
     public static HuffmanNode createHuffmanTree(int[] arr) {
         // 构建一个HuffmanNode的list
         List<HuffmanNode> nodes = new ArrayList<HuffmanNode>();
@@ -49,10 +53,22 @@ public class huffmanTree {
 
     }
 
-    // 生成赫夫曼编码表
-//    public Map<Byte, String> getCodes(HuffmanNode root) {
-//        if (root == null) {
+    /**
+     * 生成赫夫曼编码表
+     * 将传入的node节点的所有叶子节点的赫夫曼编码得到，并放入HuffmanCodes集合
+     * @param node  传入的节点
+     * @param code  路径：左0右1
+     * @param stringBuilder 用于拼接路径
+     * @return
+     */
+//    public Map<Byte, String> getCodes(HuffmanNode node,String code,StringBuilder stringBuilder) {
+//        if (node == null) {
 //            return null;
+//        }
+//        StringBuilder temp = new StringBuilder(stringBuilder);
+//        temp.append(code);
+//        if(node.getValue()){
+//
 //        }
 //    }
 
