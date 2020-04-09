@@ -3,10 +3,11 @@ package cn.guzx.dataStructure.tree;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 
 public class huffmanTree {
     public static void main(String[] args) {
-        int arr[] = new int[]{7,8,9,6,1,3};
+        int arr[] = new int[]{7, 8, 9, 6, 1, 3};
         HuffmanNode node = createHuffmanTree(arr);
         node.preOrder();
     }
@@ -19,13 +20,13 @@ public class huffmanTree {
             nodes.add(new HuffmanNode(value));
         }
         // 循环构建赫夫曼树，直到只有一个节点时结束
-        while (nodes.size()>1){
+        while (nodes.size() > 1) {
             Collections.sort(nodes); // 从小到大排列
             // 取出当前权值最小的两个数
             HuffmanNode node1 = nodes.get(0);
             HuffmanNode node2 = nodes.get(1);
             // 构建一棵新的二叉树
-            HuffmanNode newNode = new HuffmanNode(node1.getValue()+node2.getValue());
+            HuffmanNode newNode = new HuffmanNode(node1.getValue() + node2.getValue());
             newNode.setLeft(node1);
             newNode.setRight(node2);
             // 将处理过的节点移除
@@ -39,14 +40,21 @@ public class huffmanTree {
     }
 
     // 前序遍历赫夫曼树
-    public void preOrder(HuffmanNode root){
-        if(root==null){
+    public void preOrder(HuffmanNode root) {
+        if (root == null) {
             return;
-        }else{
+        } else {
             root.preOrder();
         }
 
     }
+
+    // 生成赫夫曼编码表
+//    public Map<Byte, String> getCodes(HuffmanNode root) {
+//        if (root == null) {
+//            return null;
+//        }
+//    }
 
 }
 

@@ -1,7 +1,5 @@
 package cn.guzx.dataStructure.tree;
 
-import cn.guzx.temp;
-
 public class CluesBinaryTree {
     public static void main(String[] args) {
         Node2 node1 = new Node2();
