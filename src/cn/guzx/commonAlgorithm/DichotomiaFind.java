@@ -1,3 +1,6 @@
+/**
+ * 二分查找法，非递归
+ */
 package cn.guzx.commonAlgorithm;
 
 public class DichotomiaFind {
