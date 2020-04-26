@@ -5,26 +5,39 @@ package cn.guzx.dataStructure.grid;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class Demo {
     public static void main(String[] args) {
-        Grid grid = new Grid(5);
-        String nodes[] = {"A", "B", "C", "D", "E"};
+//        Grid grid = new Grid(5);
+        Grid grid = new Grid(8);
+//        String nodes[] = {"A", "B", "C", "D", "E"};
+        String nodes[] = {"1", "2", "3", "4", "5", "6", "7", "8"};
         // 将所有节点添加到图中
         for (String node : nodes) {
             grid.vertexList.add(node);
         }
         // 添加边
-        grid.addEdges(0, 1, 1); // A -> B
-        grid.addEdges(0, 2, 1); // A -> B
-        grid.addEdges(1, 2, 1); // A -> B
-        grid.addEdges(1, 3, 1); // A -> B
-        grid.addEdges(1, 4, 1); // A -> B
+//        grid.addEdges(0, 1, 1); // A -> B
+//        grid.addEdges(0, 2, 1); // A -> B
+//        grid.addEdges(1, 2, 1); // A -> B
+//        grid.addEdges(1, 3, 1); // A -> B
+//        grid.addEdges(1, 4, 1); // A -> B
+        grid.addEdges(0, 1, 1);
+        grid.addEdges(0, 2, 1);
+        grid.addEdges(1, 3, 1);
+        grid.addEdges(1, 4, 1);
+        grid.addEdges(3, 7, 1);
+        grid.addEdges(4, 7, 1);
+        grid.addEdges(2, 5, 1);
+        grid.addEdges(2, 6, 1);
+        grid.addEdges(5, 6, 1);
         // 显示该图所对应的邻接矩阵
         grid.showAll();
 
-        grid.depthTraverse();
-
+//        grid.depthTraverse();
+        grid.broadTraverse();
 
     }
 }
@@ -183,6 +196,52 @@ class Grid {
         for (int i = 0; i < getNumberNode(); i++) {
             if (!isVisited[i]) {
                 depthTraverse(isVisited, i);
+            }
+        }
+    }
+
+    /**
+     * 广度优先遍历
+     *
+     * @param isVisit 该节点是否已经访问过了
+     * @param i       要访问的节点的下标，从第一个开始
+     */
+    public void broadTraverse(boolean isVisit[], int i) {
+        int head; // 表示队列头结点对应的下标
+        int next; // 表示邻接节点对应的下标
+        // 用于保存该节点能访问到的节点
+        Queue queue = new LinkedList<String>();
+        // 取出该节点
+        System.out.print("->"+getValueOfIndex(i));
+        // 表示已访问过
+        isVisited[i] = true;
+        // 将访问过的节点加入队列
+        queue.add(i);
+
+        // 队列不为空
+        if (!queue.isEmpty()) {
+            // 将已访问过的节点出队列
+            head = (int) queue.poll();
+            // 获取下一个可以访问到的节点的下标
+            next = getFirstNode(head);
+            while (next != -1) {
+                // 节点存在且没有被访问过
+                if (!isVisited[next]) {
+                    System.out.print("->"+getValueOfIndex(next));
+                    isVisited[next] = true;
+                    queue.add(next);
+                }
+                // 获取该节点可以访问的下一个节点的下标
+                next = getNextNode(head, next);
+            }
+        }
+    }
+
+    public void broadTraverse() {
+        isVisited = new boolean[vertexList.size()];
+        for (int i = 0; i < vertexList.size(); i++) {
+            if (!isVisited[i]) {
+                broadTraverse(isVisited, i);
             }
         }
     }

@@ -7,7 +7,6 @@ public class DichotomiaFind {
     public static void main(String[] args) {
         int[] arr = {1, 2, 4, 6, 9, 10};
         System.out.println(find(arr, 11));
-        ;
     }
 
     public static int find(int arr[], int value) {
