@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="46569585-b49e-405c-8371-3aa1a7a83b0f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructure.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructure.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/META-INF/DataStructure.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/club/datastructure/CircleArray/CircleArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/club/datastructure/CircleArray/CircleQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/club/datastructure/LinkedList/LinkInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/club/datastructure/LinkedList/Linked.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/club/datastructure/LinkedList/LinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/club/datastructure/Queue/ArrayQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/club/datastructure/Queue/Queue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/club/datastructure/SparseArray/SparseArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/club/designpattern/creative/AbstractFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/club/designpattern/creative/Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/club/designpattern/creative/Computer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/club/designpattern/creative/ConcreteBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/club/designpattern/creative/ConcreteFactory1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/club/designpattern/creative/ConcreteFactory2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/club/designpattern/creative/Director.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/club/designpattern/creative/HungrySingleton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/club/designpattern/creative/LazySingleton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/club/designpattern/creative/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/club/designpattern/creative/Product1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/club/designpattern/creative/Product2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/club/designpattern/creative/Prototype.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/club/designpattern/creative/SimpleFactoryProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/club/designpattern/test/BuilderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/club/designpattern/test/DemoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/club/designpattern/test/FactoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/club/designpattern/test/PrototypeTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/club/designpattern/test/SingletonTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/META-INF/dataStructure.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/FibonacciList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/FibonacciList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/algorithm/find/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/algorithm/find/Demo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/algorithm/recursion/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/algorithm/recursion/Demo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/algorithm/recursion/Maze.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/algorithm/recursion/Maze.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/algorithm/recursion/Queen8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/algorithm/recursion/Queen8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/array/SparseArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/array/SparseArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/hashTab/HashTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/hashTab/HashTab.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/hashTab/HashTabDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/hashTab/HashTabDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/hashTab/ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/hashTab/ListNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/hashTab/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/hashTab/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/BothwayLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/BothwayLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/CircleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/CircleLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/CirculationLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/CirculationLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/DoubleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/DoubleLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/DoubleLinkedList2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/DoubleLinkedList2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/LinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/LinkedList2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/LinkedList2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/Person2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/Person2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/SingleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/SingleLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/SingleLinkedList2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/SingleLinkedList2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/queue/CirculationQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/queue/CirculationQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/queue/CirculationQueue2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/queue/CirculationQueue2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/queue/Queue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/queue/Queue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/queue/Queue2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/queue/Queue2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/queue/Queue3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/queue/Queue3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/queue/TempQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/queue/TempQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/stack/ArrayStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/stack/ArrayStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/stack/LinkedListStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/stack/LinkedListStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/stack/Stack2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/stack/Stack2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/tree/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/tree/BinaryTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/tree/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/tree/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/tree/Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/tree/Tree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/leetCode/CharArrange.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/leetCode/CharArrange.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/leetCode/CharOnly.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/leetCode/CharOnly.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/leetCode/StringCompress.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/leetCode/StringCompress.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/temp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/temp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/club/designpattern/test/DemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/designpattern/test/DemoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1rFAVlCjClnjkbbWUS3KC02y644" />
+  <component name="ProjectViewState">
+    <option name="compactDirectories" value="true" />
+    <option name="flattenModules" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="JUnit.FactoryTest.testSimpleFactory">
+    <configuration name="test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.zhuzhuxia.test1" />
+      <module name="DataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.zhuzhuxia.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="club.designpattern.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="club.designpattern.test" />
+      <option name="MAIN_CLASS_NAME" value="club.designpattern.test.DemoTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FactoryTest.testSimpleFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="club.designpattern.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="club.designpattern.test" />
+      <option name="MAIN_CLASS_NAME" value="club.designpattern.test.FactoryTest" />
+      <option name="METHOD_NAME" value="testSimpleFactory" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrototypeTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="club.designpattern.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="club.designpattern.test" />
+      <option name="MAIN_CLASS_NAME" value="club.designpattern.test.PrototypeTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SingletonTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="club.designpattern.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="club.designpattern.test" />
+      <option name="MAIN_CLASS_NAME" value="club.designpattern.test.SingletonTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.FactoryTest.testSimpleFactory" />
+        <item itemvalue="JUnit.SingletonTest.test" />
+        <item itemvalue="JUnit.DemoTest.test" />
+        <item itemvalue="JUnit.PrototypeTest.test" />
+        <item itemvalue="Application.test1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="46569585-b49e-405c-8371-3aa1a7a83b0f" name="Default Changelist" comment="" />
+      <created>1618561489715</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618561489715</updated>
+      <workItem from="1618561492513" duration="747000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1323" height="223" key="GridCell.Tab.0.bottom" timestamp="1618562234702">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1618562234702" />
+    <state width="1323" height="223" key="GridCell.Tab.0.center" timestamp="1618562234701">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1618562234701" />
+    <state width="1323" height="223" key="GridCell.Tab.0.left" timestamp="1618562234700">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1618562234700" />
+    <state width="1323" height="223" key="GridCell.Tab.0.right" timestamp="1618562234701">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1618562234701" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1618562234704">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1618562234704" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1618562234703">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1618562234703" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1618562234702">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1618562234702" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1618562234703">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1618562234703" />
+    <state x="381" y="255" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1618561956986">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="381" y="255" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.728@0.0.1366.728" timestamp="1618561956986" />
+  </component>
+</project>
