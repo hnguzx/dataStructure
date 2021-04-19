@@ -20,60 +20,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46569585-b49e-405c-8371-3aa1a7a83b0f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/adapter/Adaptee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/adapter/AdapteeInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/adapter/ClassAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/adapter/ObjectAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/adapter/Target.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/adapter/TargetImplement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/adapter/TwoAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/proxy/DynamicProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/proxy/RealSubject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/proxy/StaticProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/proxy/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/test/AdapterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/test/ProxyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/bridge/Abstraction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/bridge/Asus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/bridge/Black.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/bridge/Computer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/bridge/ComputerBrand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/bridge/ComputerColor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/bridge/ConcreteImplementor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/bridge/ConcreteImplementor2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/bridge/Desktop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/bridge/Implementor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/bridge/Laptop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/bridge/Mac.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/bridge/Red.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/bridge/RefinedAbstraction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/bridge/RefinedAbstraction2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/bridge/White.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/bridge/XiaoMi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/composite/Component.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/composite/ComponentSafe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/composite/Composite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/composite/CompositeSafe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/composite/Leaf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/composite/LeafSafe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/decorator/Component.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/decorator/ConcreteComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/decorator/ConcreteDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/decorator/Decorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/facade/Facade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/facade/SubSystem1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/facade/SubSystem2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/flyweight/ConcreteFlyweight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/flyweight/Flyweight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/flyweight/FlyweightFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/flyweight/UnsharableFlyweight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/test/BridgeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/test/CompositeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/test/DecoratorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/test/FacadeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/test/FlyWeightTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataStructure.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructure.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/creative/AbstractFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/creative/Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/creative/Computer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/creative/ConcreteBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/creative/ConcreteFactory1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/creative/ConcreteFactory2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/creative/Director.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/creative/HungrySingleton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/creative/LazySingleton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/creative/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/creative/Product1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/creative/Product2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/creative/Prototype.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/creative/SimpleFactoryProduct.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/test/BuilderTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/test/DemoTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/test/FactoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/test/PrototypeTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/test/SingletonTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/creative/AbstractFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/designpattern/creative/factory/AbstractFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/creative/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/designpattern/creative/builder/Builder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/creative/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/designpattern/creative/builder/Computer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/creative/ConcreteBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/designpattern/creative/builder/ConcreteBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/creative/ConcreteFactory1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/designpattern/creative/factory/ConcreteFactory1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/creative/ConcreteFactory2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/designpattern/creative/factory/ConcreteFactory2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/creative/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/designpattern/creative/builder/Director.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/creative/HungrySingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/designpattern/creative/singleton/HungrySingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/creative/LazySingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/designpattern/creative/singleton/LazySingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/creative/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/designpattern/creative/factory/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/creative/Product1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/designpattern/creative/factory/Product1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/creative/Product2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/designpattern/creative/factory/Product2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/creative/Prototype.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/designpattern/creative/prototype/Prototype.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/creative/SimpleFactoryProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/designpattern/creative/factory/SimpleFactoryProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/test/BuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/BuilderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/test/DemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/DemoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/test/FactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/FactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/test/PrototypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/PrototypeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/test/SingletonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/SingletonTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,8 +100,26 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="JUnit.AdapterTest.twoTest">
-    <configuration name="AdapterTest.objectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="club.designpattern.structural.facade" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CompositeTest.safeTest">
+    <configuration name="DemoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="club.test.DemoTest" />
+      <module name="DataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="club.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompositeTest.safeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DataStructure" />
       <extension name="coverage">
         <pattern>
@@ -123,14 +128,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="club.test" />
-      <option name="MAIN_CLASS_NAME" value="club.test.AdapterTest" />
-      <option name="METHOD_NAME" value="objectTest" />
+      <option name="MAIN_CLASS_NAME" value="club.test.CompositeTest" />
+      <option name="METHOD_NAME" value="safeTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AdapterTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CompositeTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DataStructure" />
       <extension name="coverage">
         <pattern>
@@ -139,14 +144,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="club.test" />
-      <option name="MAIN_CLASS_NAME" value="club.test.AdapterTest" />
+      <option name="MAIN_CLASS_NAME" value="club.test.CompositeTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AdapterTest.twoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FacadeTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DataStructure" />
       <extension name="coverage">
         <pattern>
@@ -155,14 +160,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="club.test" />
-      <option name="MAIN_CLASS_NAME" value="club.test.AdapterTest" />
-      <option name="METHOD_NAME" value="twoTest" />
+      <option name="MAIN_CLASS_NAME" value="club.test.FacadeTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProxyTest.dynamicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FlyWeightTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DataStructure" />
       <extension name="coverage">
         <pattern>
@@ -171,24 +176,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="club.test" />
-      <option name="MAIN_CLASS_NAME" value="club.test.ProxyTest" />
-      <option name="METHOD_NAME" value="dynamicTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProxyTest.staticTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DataStructure" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="club.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="club.test" />
-      <option name="MAIN_CLASS_NAME" value="club.test.ProxyTest" />
-      <option name="METHOD_NAME" value="staticTest" />
+      <option name="MAIN_CLASS_NAME" value="club.test.FlyWeightTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -196,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AdapterTest.twoTest" />
-        <item itemvalue="JUnit.AdapterTest.objectTest" />
-        <item itemvalue="JUnit.AdapterTest.test" />
-        <item itemvalue="JUnit.ProxyTest.dynamicTest" />
-        <item itemvalue="JUnit.ProxyTest.staticTest" />
+        <item itemvalue="JUnit.CompositeTest.safeTest" />
+        <item itemvalue="JUnit.CompositeTest.test" />
+        <item itemvalue="JUnit.FlyWeightTest.test" />
+        <item itemvalue="Application.DemoTest" />
+        <item itemvalue="JUnit.FacadeTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +203,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618561489715</updated>
-      <workItem from="1618561492513" duration="7798000" />
+      <workItem from="1618561492513" duration="8314000" />
+      <workItem from="1618796497238" duration="16279000" />
     </task>
     <task id="LOCAL-00001" summary="删除无用文件">
       <created>1618562438264</created>
@@ -223,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618562438264</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="更新代理模式和适配器模式">
+      <created>1618570641585</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1618570641585</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,59 +236,84 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="删除无用文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除无用文件" />
+    <MESSAGE value="更新代理模式和适配器模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新代理模式和适配器模式" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser" timestamp="1618569733179">
+    <state x="413" y="118" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1618827399616">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1618569733179" />
+    <state x="413" y="118" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1618827399616" />
+    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser" timestamp="1618827377915">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1618827377915" />
     <state x="432" y="33" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1618568848351">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="432" y="33" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1618568848351" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1618570004872">
+    <state width="1323" height="182" key="GridCell.Tab.0.bottom" timestamp="1618828145509">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1618570004872" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1618570004872">
+    <state width="1323" height="182" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1618828145509" />
+    <state width="1323" height="182" key="GridCell.Tab.0.center" timestamp="1618828145507">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1618570004872" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1618570004871">
+    <state width="1323" height="182" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1618828145507" />
+    <state width="1323" height="182" key="GridCell.Tab.0.left" timestamp="1618828145505">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1618570004871" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1618570004872">
+    <state width="1323" height="182" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1618828145505" />
+    <state width="1323" height="182" key="GridCell.Tab.0.right" timestamp="1618828145508">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1618570004872" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1618562234704">
+    <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1618828145508" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1618570653616">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1618562234704" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1618562234703">
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1618570653616" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1618570653615">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1618562234703" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1618562234702">
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1618570653615" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1618570653615">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1618562234702" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1618562234703">
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1618570653615" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1618570653616">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1618562234703" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1618562442256">
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1618570653616" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1618570643384">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1618562442256" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1618570643384" />
     <state x="381" y="255" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1618561956986">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="381" y="255" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.728@0.0.1366.728" timestamp="1618561956986" />
+    <state x="477" y="276" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1618819677294">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="477" y="276" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1618819677294" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1618826481422">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1618826481422" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/club/test/FlyWeightTest.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
