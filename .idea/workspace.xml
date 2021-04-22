@@ -20,29 +20,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46569585-b49e-405c-8371-3aa1a7a83b0f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/command/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/command/ConcreteCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/command/Invoker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/command/Receiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/observer/ConcreteObserver1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/observer/ConcreteObserver2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/observer/ConcreteSubject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/observer/JavaObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/observer/JavaSubject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/observer/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/observer/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/responsibility/ConcreteHandler1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/responsibility/ConcreteHandler2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/responsibility/Handler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/state/ConcreteStateA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/state/ConcreteStateB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/state/Context.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/state/State.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/test/CommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/test/ObserverTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/test/ResponsibilityTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/test/StateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/interpreter/AbstractExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/interpreter/Context.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/interpreter/NonterminalExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/interpreter/TerminalExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/iterator/Aggregate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/iterator/ConcreteAggregate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/iterator/Concretelterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/iterator/Iterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/mediator/Colleague.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/mediator/ConcreteColleague1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/mediator/ConcreteColleague2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/mediator/ConcreteMediator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/mediator/Mediator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/mediator/SimpleColleague.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/mediator/SimpleConcreteColleague1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/mediator/SimpleConcreteColleague2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/mediator/SimpleMediator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/memento/Caretaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/memento/Memento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/memento/Originator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/visitor/ConcreteElementA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/visitor/ConcreteElementB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/visitor/ConcreteVisitorA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/visitor/ConcreteVisitorB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/visitor/Element.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/visitor/ObjectStructure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/visitor/Visitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/test/IteratorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/test/MediatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/test/MementoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/test/VisitorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataStructure.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructure.iml" afterDir="false" />
     </list>
@@ -82,19 +90,35 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/memento/Photo" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="club.designpattern.behavior.visitor" />
+      <recent name="club.designpattern.behavior.mediator" />
       <recent name="club.designpattern.behavior.observer" />
       <recent name="club.designpattern.behavior.state" />
       <recent name="club.designpattern.behavior.responsibility" />
-      <recent name="club.designpattern.behavior.strategy" />
-      <recent name="club.designpattern.structural.facade" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Git_Repositories\DataStructure\src\memento\Photo" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ObserverTest.test">
-    <configuration name="CommandTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MementoTest.test">
+    <configuration name="MementoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="club.test.MementoTest" />
+      <module name="dataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="club.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IteratorTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dataStructure" />
       <extension name="coverage">
         <pattern>
@@ -103,14 +127,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="club.test" />
-      <option name="MAIN_CLASS_NAME" value="club.test.CommandTest" />
+      <option name="MAIN_CLASS_NAME" value="club.test.IteratorTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ObserverTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MediatorTest.simpleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dataStructure" />
       <extension name="coverage">
         <pattern>
@@ -119,14 +143,30 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="club.test" />
-      <option name="MAIN_CLASS_NAME" value="club.test.ObserverTest" />
+      <option name="MAIN_CLASS_NAME" value="club.test.MediatorTest" />
+      <option name="METHOD_NAME" value="simpleTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MementoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="club.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="club.test" />
+      <option name="MAIN_CLASS_NAME" value="club.test.MementoTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResponsibilityTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VisitorTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dataStructure" />
       <extension name="coverage">
         <pattern>
@@ -135,39 +175,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="club.test" />
-      <option name="MAIN_CLASS_NAME" value="club.test.ResponsibilityTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StateTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dataStructure" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="club.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="club.test" />
-      <option name="MAIN_CLASS_NAME" value="club.test.StateTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StrategyTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dataStructure" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="club.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="club.test" />
-      <option name="MAIN_CLASS_NAME" value="club.test.StrategyTest" />
+      <option name="MAIN_CLASS_NAME" value="club.test.VisitorTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -176,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ObserverTest.test" />
-        <item itemvalue="JUnit.StateTest.test" />
-        <item itemvalue="JUnit.StrategyTest.test" />
-        <item itemvalue="JUnit.ResponsibilityTest.test" />
-        <item itemvalue="JUnit.CommandTest.test" />
+        <item itemvalue="JUnit.MementoTest.test" />
+        <item itemvalue="Application.MementoTest" />
+        <item itemvalue="JUnit.VisitorTest.test" />
+        <item itemvalue="JUnit.IteratorTest.test" />
+        <item itemvalue="JUnit.MediatorTest.simpleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +206,8 @@
       <workItem from="1618796497238" duration="16366000" />
       <workItem from="1618882552889" duration="10191000" />
       <workItem from="1618976148673" duration="11652000" />
-      <workItem from="1619001758618" duration="1352000" />
+      <workItem from="1619001758618" duration="1432000" />
+      <workItem from="1619055150107" duration="14237000" />
     </task>
     <task id="LOCAL-00001" summary="删除无用文件">
       <created>1618562438264</created>
@@ -228,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618905812677</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="命令模式，责任链模式，状态模式，观察者模式">
+      <created>1619003356656</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1619003356657</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,37 +267,38 @@
     <MESSAGE value="更新代理模式和适配器模式" />
     <MESSAGE value="桥接模式，装饰器模式，外观模式，享元模式以及组合模式" />
     <MESSAGE value="模板，策略模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="模板，策略模式" />
+    <MESSAGE value="命令模式，责任链模式，状态模式，观察者模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="命令模式，责任链模式，状态模式，观察者模式" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="118" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1618827399616">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="118" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1618827399616" />
-    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser" timestamp="1619001965934">
+    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser" timestamp="1619080328592">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1619001965934" />
+    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1619080328592" />
     <state x="432" y="33" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1618568848351">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="432" y="33" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1618568848351" />
-    <state width="1323" height="223" key="GridCell.Tab.0.bottom" timestamp="1619001660890">
+    <state width="1323" height="115" key="GridCell.Tab.0.bottom" timestamp="1619076286953">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619001660890" />
-    <state width="1323" height="223" key="GridCell.Tab.0.center" timestamp="1619001660889">
+    <state width="1323" height="115" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619076286953" />
+    <state width="1323" height="115" key="GridCell.Tab.0.center" timestamp="1619076286953">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1619001660889" />
-    <state width="1323" height="223" key="GridCell.Tab.0.left" timestamp="1619001660889">
+    <state width="1323" height="115" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1619076286953" />
+    <state width="1323" height="115" key="GridCell.Tab.0.left" timestamp="1619076286952">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1619001660889" />
-    <state width="1323" height="223" key="GridCell.Tab.0.right" timestamp="1619001660890">
+    <state width="1323" height="115" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1619076286952" />
+    <state width="1323" height="115" key="GridCell.Tab.0.right" timestamp="1619076286953">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619001660890" />
+    <state width="1323" height="115" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619076286953" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1619001660890">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -302,10 +319,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="456" y="65" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1618997023769" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1618905820471">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1619003359319">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1618905820471" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1619003359319" />
     <state x="381" y="255" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1618561956986">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -314,6 +331,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="477" y="276" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1618819677294" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1619075218619">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1619075218619" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1618826481422">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -326,6 +347,14 @@
           <url>file://$PROJECT_DIR$/src/club/test/FlyWeightTest.java</url>
           <line>26</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/club/test/VisitorTest.java</url>
+          <line>14</line>
+          <properties class="club.test.VisitorTest" method="test">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
