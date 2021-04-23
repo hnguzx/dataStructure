@@ -20,39 +20,132 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46569585-b49e-405c-8371-3aa1a7a83b0f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/interpreter/AbstractExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/interpreter/Context.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/interpreter/NonterminalExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/interpreter/TerminalExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/iterator/Aggregate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/iterator/ConcreteAggregate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/iterator/Concretelterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/iterator/Iterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/mediator/Colleague.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/mediator/ConcreteColleague1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/mediator/ConcreteColleague2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/mediator/ConcreteMediator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/mediator/Mediator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/mediator/SimpleColleague.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/mediator/SimpleConcreteColleague1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/mediator/SimpleConcreteColleague2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/mediator/SimpleMediator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/memento/Caretaker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/memento/Memento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/memento/Originator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/visitor/ConcreteElementA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/visitor/ConcreteElementB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/visitor/ConcreteVisitorA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/visitor/ConcreteVisitorB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/visitor/Element.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/visitor/ObjectStructure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/visitor/Visitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/test/IteratorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/test/MediatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/test/MementoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/test/VisitorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/file/spareArray.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataStructure.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructure.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/datastructure/CircleArray/CircleArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/datastructure/CircleArray/CircleQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/datastructure/LinkedList/LinkInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/datastructure/LinkedList/Linked.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/datastructure/LinkedList/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/club/datastructure/LinkedList/LinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/datastructure/Queue/ArrayQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/datastructure/Queue/Queue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/club/datastructure/Queue/Queue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/datastructure/SparseArray/SparseArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/creative/builder/ConcreteBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/creative/builder/ConcreteBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/structural/adapter/Adaptee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/structural/adapter/Adaptee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/structural/adapter/TargetImplement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/structural/adapter/TargetImplement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/structural/proxy/DynamicProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/structural/proxy/DynamicProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/structural/proxy/RealSubject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/structural/proxy/RealSubject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/structural/proxy/StaticProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/structural/proxy/StaticProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/FibonacciList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/algorithm/find/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/algorithm/recursion/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/algorithm/recursion/Maze.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/algorithm/recursion/Queen8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/algorithm/sort/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/commonAlgorithm/DichotomiaFind.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/commonAlgorithm/DynamicPlanning.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/commonAlgorithm/SeparateResolve.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/array/SparseArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/grid/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/grid/Grid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/hashTab/HashTab.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/hashTab/HashTabDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/hashTab/ListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/hashTab/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/BothwayLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/CircleLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/CirculationLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/DoubleLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/DoubleLinkedList2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/LinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/LinkedList2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/Person2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/SingleLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/linkedList/SingleLinkedList2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/queue/CirculationQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/queue/CirculationQueue2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/queue/Queue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/queue/Queue2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/queue/Queue3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/queue/TempQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/stack/ArrayStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/stack/LinkedListStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/stack/Stack2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/tree/AVLTreeDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/tree/ArrayBinaryTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/tree/ArrayTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/tree/AvlNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/tree/AvlTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/tree/B_AddTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/tree/B_MultiplicationTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/tree/B_Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/tree/BinarySortTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/tree/BinaryTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/tree/CluesBinaryTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/tree/HuffmanCompress.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/tree/HuffmanNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/tree/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/tree/Node2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/tree/SortNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/tree/SortTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/tree/Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/tree/Tree2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/tree/Tree_23.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/dataStructure/tree/huffmanTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/leetCode/CharArrange.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/leetCode/CharOnly.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/leetCode/StringCompress.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/guzx/temp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/zhuzhuxia/test1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/cn/zhuzhuxia/test1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/club/datastructure/CircleArray/CircleArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/club/datastructure/LinkedList/LinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/club/datastructure/Queue/Queue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/club/datastructure/SparseArray/SparseArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/files/spareArray.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/files/t1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/t1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/files/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/FibonacciList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/algorithm/commonAlgorithm/FibonacciList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/algorithm/find/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/algorithm/search/Search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/algorithm/recursion/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/algorithm/recursion/Recursion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/algorithm/recursion/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/algorithm/recursion/Maze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/algorithm/recursion/Queen8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/algorithm/recursion/Queen8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/algorithm/sort/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/algorithm/sort/Sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/commonAlgorithm/DichotomiaFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/algorithm/commonAlgorithm/DichotomiaFind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/commonAlgorithm/DynamicPlanning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/algorithm/commonAlgorithm/DynamicPlanning.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/commonAlgorithm/SeparateResolve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/algorithm/commonAlgorithm/SeparateResolve.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/dataStructure/array/SparseArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/datastructure/array/SparseArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/dataStructure/grid/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/datastructure/grid/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/dataStructure/hashTab/HashTabDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/datastructure/hashTab/HashTabDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/dataStructure/linkedList/BothwayLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/datastructure/linkedList/BothwayLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/dataStructure/linkedList/CirculationLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/datastructure/linkedList/CirculationLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/dataStructure/linkedList/SingleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/datastructure/linkedList/SingleLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/dataStructure/linkedList/SingleLinkedList2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/datastructure/linkedList/SingleLinkedList2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/dataStructure/queue/CirculationQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/datastructure/queue/CirculationQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/dataStructure/queue/CirculationQueue2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/datastructure/queue/CirculationQueue2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/dataStructure/queue/TempQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/datastructure/queue/TempQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/dataStructure/stack/ArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/datastructure/stack/ArrayStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/dataStructure/stack/LinkedListStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/datastructure/stack/LinkedListStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/dataStructure/tree/AVLTreeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/datastructure/tree/AVLTreeDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/dataStructure/tree/ArrayBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/datastructure/tree/ArrayBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/dataStructure/tree/B_AddTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/datastructure/tree/B_AddTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/dataStructure/tree/B_MultiplicationTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/datastructure/tree/B_MultiplicationTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/dataStructure/tree/B_Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/datastructure/tree/B_Tree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/dataStructure/tree/BinarySortTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/datastructure/tree/BinarySortTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/dataStructure/tree/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/datastructure/tree/BinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/dataStructure/tree/CluesBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/datastructure/tree/CluesBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/dataStructure/tree/HuffmanCompress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/datastructure/tree/HuffmanCompress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/dataStructure/tree/HuffmanTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/datastructure/tree/HuffmanTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/dataStructure/tree/Tree_23.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/datastructure/tree/Tree_23.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/leetCode/CharArrange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/leetCode/CharArrange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/leetCode/CharOnly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/leetCode/CharOnly.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/leetCode/StringCompress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/leetCode/StringCompress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/guzx/temp.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +183,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/memento/Photo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/club/file" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -101,10 +194,25 @@
       <recent name="club.designpattern.behavior.responsibility" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Git_Repositories\DataStructure\src\club\file" />
+      <recent name="F:\Git_Repositories\DataStructure\src" />
       <recent name="F:\Git_Repositories\DataStructure\src\memento\Photo" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MementoTest.test">
+  <component name="RunManager" selected="Application.SparseArray">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.guzx.Main" />
+      <module name="dataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.guzx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MementoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="club.test.MementoTest" />
       <module name="dataStructure" />
@@ -118,34 +226,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IteratorTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SparseArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="club.datastructure.array.SparseArray" />
       <module name="dataStructure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="club.test.*" />
+          <option name="PATTERN" value="club.datastructure.array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="club.test" />
-      <option name="MAIN_CLASS_NAME" value="club.test.IteratorTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MediatorTest.simpleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="temp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.guzx.temp" />
       <module name="dataStructure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="club.test.*" />
+          <option name="PATTERN" value="club.algorithm.commonAlgorithm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="club.test" />
-      <option name="MAIN_CLASS_NAME" value="club.test.MediatorTest" />
-      <option name="METHOD_NAME" value="simpleTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -166,29 +268,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VisitorTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dataStructure" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="club.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="club.test" />
-      <option name="MAIN_CLASS_NAME" value="club.test.VisitorTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SparseArray" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.temp" />
         <item itemvalue="JUnit.MementoTest.test" />
         <item itemvalue="Application.MementoTest" />
-        <item itemvalue="JUnit.VisitorTest.test" />
-        <item itemvalue="JUnit.IteratorTest.test" />
-        <item itemvalue="JUnit.MediatorTest.simpleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +293,8 @@
       <workItem from="1618882552889" duration="10191000" />
       <workItem from="1618976148673" duration="11652000" />
       <workItem from="1619001758618" duration="1432000" />
-      <workItem from="1619055150107" duration="14237000" />
+      <workItem from="1619055150107" duration="17581000" />
+      <workItem from="1619141477977" duration="5735000" />
     </task>
     <task id="LOCAL-00001" summary="删除无用文件">
       <created>1618562438264</created>
@@ -244,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619003356657</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="中介者，迭代器，访问者，备忘录，解释器">
+      <created>1619080948060</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1619080948060</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +362,8 @@
     <MESSAGE value="桥接模式，装饰器模式，外观模式，享元模式以及组合模式" />
     <MESSAGE value="模板，策略模式" />
     <MESSAGE value="命令模式，责任链模式，状态模式，观察者模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="命令模式，责任链模式，状态模式，观察者模式" />
+    <MESSAGE value="中介者，迭代器，访问者，备忘录，解释器" />
+    <option name="LAST_COMMIT_MESSAGE" value="中介者，迭代器，访问者，备忘录，解释器" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="118" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1618827399616">
@@ -279,26 +374,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1619080328592" />
-    <state x="432" y="33" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1618568848351">
+    <state x="432" y="3" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1619144615158">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="432" y="33" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1618568848351" />
-    <state width="1323" height="115" key="GridCell.Tab.0.bottom" timestamp="1619076286953">
+    <state x="432" y="3" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1619144615158" />
+    <state width="1323" height="226" key="GridCell.Tab.0.bottom" timestamp="1619147796211">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="115" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619076286953" />
-    <state width="1323" height="115" key="GridCell.Tab.0.center" timestamp="1619076286953">
+    <state width="1323" height="226" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619147796211" />
+    <state width="1323" height="226" key="GridCell.Tab.0.center" timestamp="1619147796211">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="115" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1619076286953" />
-    <state width="1323" height="115" key="GridCell.Tab.0.left" timestamp="1619076286952">
+    <state width="1323" height="226" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1619147796211" />
+    <state width="1323" height="226" key="GridCell.Tab.0.left" timestamp="1619147796211">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="115" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1619076286952" />
-    <state width="1323" height="115" key="GridCell.Tab.0.right" timestamp="1619076286953">
+    <state width="1323" height="226" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1619147796211" />
+    <state width="1323" height="226" key="GridCell.Tab.0.right" timestamp="1619147796211">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="115" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619076286953" />
+    <state width="1323" height="226" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619147796211" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1619001660890">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -315,14 +410,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1619001660890" />
+    <state x="263" y="98" key="IDE.errors.dialog" timestamp="1619147653876">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="263" y="98" key="IDE.errors.dialog/0.0.1366.728@0.0.1366.728" timestamp="1619147653876" />
     <state x="456" y="65" key="RollbackChangesDialog" timestamp="1618997023769">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="456" y="65" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1618997023769" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1619003359319">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1619080952176">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1619003359319" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1619080952176" />
     <state x="381" y="255" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1618561956986">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
