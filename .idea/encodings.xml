@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/src/club/datastructure/SparseArray/SparseArray.java" charset="GBK" />
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/src/club/datastructure/array/SparseArray.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/club/designpattern/structural/proxy/MyMethodInterceptor.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/club/designpattern/structural/proxy/RealSubject2.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

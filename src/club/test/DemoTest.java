@@ -2,6 +2,8 @@ package club.test;
 
 import org.junit.Test;
 
+import java.util.Random;
+
 /**
  * @author Guzx
  * @version 1.0
@@ -19,5 +21,12 @@ public class DemoTest {
         System.out.println(i);
         System.out.println(j);
         System.out.println(k);
+    }
+
+    @Test
+    public void mathTest() {
+        for (int i = 0; i < 10; i++) {
+            System.out.println(new Random().nextInt(10));
+        }
     }
 }
