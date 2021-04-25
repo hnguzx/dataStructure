@@ -24,8 +24,8 @@ public class VisitorTest {
         Visitor visitorA = new ConcreteVisitorA();
         objectStructure.accept(visitorA);
 
-        Visitor visitorB = new ConcreteVisitorB();
-        objectStructure.accept(visitorB);
+//        Visitor visitorB = new ConcreteVisitorB();
+//        objectStructure.accept(visitorB);
 
 
 

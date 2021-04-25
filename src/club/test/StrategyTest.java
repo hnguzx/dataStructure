@@ -18,12 +18,12 @@ public class StrategyTest {
     public void test(){
         Context context = new Context();
         Strategy strategy1 = new ConcreteStrategy1();
-
-        Context context1 = new Context(new ConcreteStrategy2());
+        Strategy strategy2 = new ConcreteStrategy2();
 
         context.setStrategy(strategy1);
         context.strategyMethod();
 
-        context1.strategyMethod();
+        context.setStrategy(strategy2);
+        context.strategyMethod();
     }
 }

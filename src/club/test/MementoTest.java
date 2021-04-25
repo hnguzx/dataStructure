@@ -27,6 +27,7 @@ public class MementoTest {
         // 修改发起人的状态
         originator.setState("状态2");
         System.out.println("修改后状态"+originator.getState());
+        caretaker.getMemento().setState(originator.getState());
 
         // 修改发起人的状态
         originator.setState("状态3");

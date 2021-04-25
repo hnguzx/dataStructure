@@ -11,6 +11,7 @@ public class ConcreteStateB extends State {
     public void handle(Context context) {
         System.out.println("当前是状态B");
         System.out.println("这是B状态时执行的程序");
+        System.out.println("B状态执行后将状态转化为A状态");
         context.setState(new ConcreteStateA());
     }
 }

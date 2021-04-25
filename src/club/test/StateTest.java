@@ -23,6 +23,8 @@ public class StateTest {
         context.setState(stateA);
         context.handle();
 
-        stateA.handle(context);
+        context.setState(stateB);
+        context.handle();
+
     }
 }
