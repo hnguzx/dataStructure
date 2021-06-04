@@ -20,16 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46569585-b49e-405c-8371-3aa1a7a83b0f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/club/designpattern/creative/singleton/InnerSingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/test/singleton/Inner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataStructure.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructure.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/behavior/memento/Memento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/memento/Memento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/behavior/state/ConcreteStateA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/state/ConcreteStateA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/behavior/state/ConcreteStateB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/state/ConcreteStateB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/behavior/strategy/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/designpattern/behavior/strategy/Context.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/test/MementoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/MementoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/test/StateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/StateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/test/StrategyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/StrategyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/test/VisitorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/VisitorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/META-INF/DataStructure.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/files/spareArray.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/files/t1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/cn/files/test.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,19 +85,16 @@
       <recent name="F:\Git_Repositories\DataStructure\src\memento\Photo" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MementoTest.test">
-    <configuration name="FlyWeightTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Inner">
+    <configuration name="Inner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="club.test.singleton.Inner" />
       <module name="dataStructure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="club.test.*" />
+          <option name="PATTERN" value="club.test.singleton.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="club.test" />
-      <option name="MAIN_CLASS_NAME" value="club.test.FlyWeightTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -170,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Inner" />
         <item itemvalue="JUnit.MementoTest.test" />
         <item itemvalue="JUnit.VisitorTest.test" />
         <item itemvalue="JUnit.StateTest.test" />
         <item itemvalue="JUnit.StrategyTest.test" />
-        <item itemvalue="JUnit.FlyWeightTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +190,11 @@
       <workItem from="1619001758618" duration="1432000" />
       <workItem from="1619055150107" duration="17581000" />
       <workItem from="1619141477977" duration="22543000" />
-      <workItem from="1619314466009" duration="10196000" />
+      <workItem from="1619314466009" duration="10811000" />
+      <workItem from="1619341833859" duration="21000" />
+      <workItem from="1619342157220" duration="1221000" />
+      <workItem from="1622520018062" duration="617000" />
+      <workItem from="1622777868912" duration="1762000" />
     </task>
     <task id="LOCAL-00001" summary="删除无用文件">
       <created>1618562438264</created>
@@ -253,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619175289675</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="完成了可以多步撤回的备忘录。&#10;完结，撒花✿✿ヽ(°▽°)ノ✿">
+      <created>1619341619188</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1619341619188</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +285,8 @@
     <MESSAGE value="命令模式，责任链模式，状态模式，观察者模式" />
     <MESSAGE value="中介者，迭代器，访问者，备忘录，解释器" />
     <MESSAGE value="更新并整理代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新并整理代码" />
+    <MESSAGE value="完成了可以多步撤回的备忘录。&#10;完结，撒花✿✿ヽ(°▽°)ノ✿" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了可以多步撤回的备忘录。&#10;完结，撒花✿✿ヽ(°▽°)ノ✿" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="118" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1618827399616">
@@ -298,38 +305,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="357" y="104" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1619163589765" />
-    <state width="1323" height="175" key="GridCell.Tab.0.bottom" timestamp="1619340979181">
+    <state width="1323" height="224" key="GridCell.Tab.0.bottom" timestamp="1619341650664">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="175" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619340979181" />
-    <state width="1323" height="175" key="GridCell.Tab.0.center" timestamp="1619340979181">
+    <state width="1323" height="224" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619341650664" />
+    <state width="1323" height="224" key="GridCell.Tab.0.center" timestamp="1619341650664">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="175" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1619340979181" />
-    <state width="1323" height="175" key="GridCell.Tab.0.left" timestamp="1619340979181">
+    <state width="1323" height="224" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1619341650664" />
+    <state width="1323" height="224" key="GridCell.Tab.0.left" timestamp="1619341650663">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="175" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1619340979181" />
-    <state width="1323" height="175" key="GridCell.Tab.0.right" timestamp="1619340979181">
+    <state width="1323" height="224" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1619341650663" />
+    <state width="1323" height="224" key="GridCell.Tab.0.right" timestamp="1619341650664">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="175" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619340979181" />
-    <state width="1323" height="224" key="GridCell.Tab.1.bottom" timestamp="1619337901411">
+    <state width="1323" height="224" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619341650664" />
+    <state width="1323" height="224" key="GridCell.Tab.1.bottom" timestamp="1619341650664">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="224" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619337901411" />
-    <state width="1323" height="224" key="GridCell.Tab.1.center" timestamp="1619337901410">
+    <state width="1323" height="224" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619341650664" />
+    <state width="1323" height="224" key="GridCell.Tab.1.center" timestamp="1619341650664">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="224" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1619337901410" />
-    <state width="1323" height="224" key="GridCell.Tab.1.left" timestamp="1619337901410">
+    <state width="1323" height="224" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1619341650664" />
+    <state width="1323" height="224" key="GridCell.Tab.1.left" timestamp="1619341650664">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="224" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1619337901410" />
-    <state width="1323" height="224" key="GridCell.Tab.1.right" timestamp="1619337901410">
+    <state width="1323" height="224" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1619341650664" />
+    <state width="1323" height="224" key="GridCell.Tab.1.right" timestamp="1619341650664">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="224" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1619337901410" />
+    <state width="1323" height="224" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1619341650664" />
     <state x="263" y="98" key="IDE.errors.dialog" timestamp="1619147653876">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -342,10 +349,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1619163611038" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1619175293067">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1619341624122">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1619175293067" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1619341624122" />
     <state x="381" y="255" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1618561956986">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
