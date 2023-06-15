@@ -1,9 +1,7 @@
 package club.test;
 
-import club.designpattern.structural.decorator.Component;
-import club.designpattern.structural.decorator.ConcreteComponent;
-import club.designpattern.structural.decorator.ConcreteDecorator;
-import org.junit.Test;
+import club.designpattern.structural.decorator.*;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author Guzx
@@ -14,12 +12,10 @@ import org.junit.Test;
 public class DecoratorTest {
 
     @Test
-    public void test(){
-
-        Component component1 = new ConcreteComponent();
-        component1.operation();
-
-        Component component2 = new ConcreteDecorator(component1);
-        component2.operation();
+    public void test() {
+        // 如果是实际方法调用前的装饰类，在外层就先调用
+        // 如果是实际方法调用后的装饰类，在内层就先调用
+        Component component = new ConcreteAfterDecorator2(new ConcreteBeforeDecorator1(new ConcreteAfterDecorator1(new ConcreteBeforeDecorator2(new ConcreteComponent()))));
+        component.operation();
     }
 }

@@ -3,7 +3,7 @@ package club.test;
 import club.designpattern.behavior.iterator.Aggregate;
 import club.designpattern.behavior.iterator.ConcreteAggregate;
 import club.designpattern.behavior.iterator.Iterator;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;

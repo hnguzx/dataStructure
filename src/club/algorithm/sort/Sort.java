@@ -5,34 +5,35 @@ import java.util.Date;
 
 public class Sort {
     public static void main(String[] args) {
-        // int[] origin = new int[8000000];
-        // for (int i = 0; i < 8000000; i++) {
-        // origin[i] = (int) (Math.random() * 1000000);
-        // }
+//        int[] origin = new int[8000000];
+//        for (int i = 0; i < 8000000; i++) {
+//            origin[i] = (int) (Math.random() * 1000000);
+//        }
 
-        // int[] origin = new int[] { 9, 2, 1, 7, 2, 3, 5, 4, 6, 0, 12 };
-        int[] origin = new int[] { 3, 2, 0, 2, 9, 1, 5 };
+        int[] origin = new int[]{9, 2, 1, 7, 2, 3, 5, 4, 6, 0, 12};
 
         System.out.println("排序前：");
         System.out.println(new Date().getTime());
-        System.out.println(Arrays.toString(origin));
-        // 八万个随机数据的测试时间
-        // bubble(origin); // 9.3
-        // select(origin); // 1.7s
-        // insert(origin); // 0.5s
-        // hill(origin); // 交换法：6.7s 移动法：0.01s 800万 3s
-        // fast(origin, 0, origin.length - 1); // 0.03s 800万 1.4s
-        // merge(origin, 0, origin.length - 1); // 2.5s
-        bucket(origin); // 0.01s 80万 0.1s 800万 0.6s
-        // heap(origin); // 0.02s 80万 0.23s 800万 2.3s
+//        System.out.println(Arrays.toString(origin));
+
+//        bubble(origin);
+//        select(origin);
+//        insert(origin);
+//        merge(origin, 0, origin.length - 1);
+
+        // 八百万个随机数据的测试时间
+//        hill(origin); // 800万 1598ms
+//        fast(origin, 0, origin.length - 1); // 800万 917ms
+//        bucket(origin); // 800万 370ms
+//        heap(origin); // 800万 1687ms
 
         System.out.println("排序后：");
         System.out.println(new Date().getTime());
-        System.out.println(Arrays.toString(origin));
+//        System.out.println(Arrays.toString(origin));
 
     }
 
-    // 冒泡排序
+    // 冒泡排序，时间复杂度较高，适合数据量较小时使用
     public static void bubble(int[] origin) {
         int temp = 0;
         boolean isContinue = false; // 标志着一个循环数组的排序是否有变化，如果没有，可提前结束排序

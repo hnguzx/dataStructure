@@ -2,7 +2,7 @@ package club.test;
 
 import club.designpattern.behavior.memento.Caretaker;
 import club.designpattern.behavior.memento.Originator;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author Guzx

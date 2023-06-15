@@ -1,7 +1,8 @@
 package club.test;
 
+import org.junit.jupiter.api.Test;
+
 import club.designpattern.structural.adapter.*;
-import org.junit.Test;
 
 /**
  * @author Guzx

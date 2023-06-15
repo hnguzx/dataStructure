@@ -3,7 +3,7 @@ package club.test;
 import club.designpattern.structural.flyweight.Flyweight;
 import club.designpattern.structural.flyweight.FlyweightFactory;
 import club.designpattern.structural.flyweight.UnsharableFlyweight;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author Guzx

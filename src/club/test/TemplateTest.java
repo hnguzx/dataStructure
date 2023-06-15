@@ -2,7 +2,7 @@ package club.test;
 
 import club.designpattern.behavior.template.AbstractClass;
 import club.designpattern.behavior.template.ConcreteClass;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author Guzx

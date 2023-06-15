@@ -1,7 +1,7 @@
 package club.test;
 
 import club.designpattern.behavior.observer.*;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author Guzx

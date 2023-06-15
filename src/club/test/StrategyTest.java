@@ -4,7 +4,7 @@ import club.designpattern.behavior.strategy.ConcreteStrategy1;
 import club.designpattern.behavior.strategy.ConcreteStrategy2;
 import club.designpattern.behavior.strategy.Context;
 import club.designpattern.behavior.strategy.Strategy;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author Guzx

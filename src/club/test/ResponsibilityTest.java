@@ -3,7 +3,7 @@ package club.test;
 import club.designpattern.behavior.responsibility.ConcreteHandler1;
 import club.designpattern.behavior.responsibility.ConcreteHandler2;
 import club.designpattern.behavior.responsibility.Handler;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import sun.reflect.Reflection;
 
 /**

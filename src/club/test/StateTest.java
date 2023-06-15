@@ -4,7 +4,7 @@ import club.designpattern.behavior.state.ConcreteStateA;
 import club.designpattern.behavior.state.ConcreteStateB;
 import club.designpattern.behavior.state.Context;
 import club.designpattern.behavior.state.State;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author Guzx

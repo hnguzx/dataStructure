@@ -20,8 +20,7 @@ public class DynamicProxy implements InvocationHandler {
         this.target = o;
     }
 
-    public Subject getInstance(Subject subject){
-        this.target = subject;
+    public Subject getInstance(){
         Class<?> clazz = target.getClass();
         return (Subject) Proxy.newProxyInstance(clazz.getClassLoader(),clazz.getInterfaces(),this);
     }
@@ -29,7 +28,6 @@ public class DynamicProxy implements InvocationHandler {
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         System.out.println("动态代理");
-        method.invoke(target,args);
-        return null;
+        return method.invoke(target, args);
     }
 }

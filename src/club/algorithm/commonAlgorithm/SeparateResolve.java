@@ -11,9 +11,6 @@ public class SeparateResolve {
     /**
      *
      * @param number 未排序圆盘数量
-     * @param A
-     * @param B
-     * @param C
      */
     public static void towerOfHanoi(int number, char A, char B, char C) {
         if (number == 1) {

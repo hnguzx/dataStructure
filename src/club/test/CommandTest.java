@@ -3,7 +3,7 @@ package club.test;
 import club.designpattern.behavior.command.Command;
 import club.designpattern.behavior.command.ConcreteCommand;
 import club.designpattern.behavior.command.Invoker;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author Guzx

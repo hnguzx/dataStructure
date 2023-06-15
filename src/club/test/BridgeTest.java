@@ -1,9 +1,7 @@
 package club.test;
 
 import club.designpattern.structural.bridge.*;
-import org.junit.Test;
-
-import javax.swing.*;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author Guzx

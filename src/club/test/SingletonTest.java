@@ -2,7 +2,7 @@ package club.test;
 
 import club.designpattern.creative.singleton.HungrySingleton;
 import club.designpattern.creative.singleton.LazySingleton;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author Guzx

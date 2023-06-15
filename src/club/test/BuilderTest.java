@@ -4,7 +4,7 @@ import club.designpattern.creative.builder.Builder;
 import club.designpattern.creative.builder.Computer;
 import club.designpattern.creative.builder.ConcreteBuilder;
 import club.designpattern.creative.builder.Director;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author Guzx

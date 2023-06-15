@@ -14,6 +14,6 @@ public class ConcreteComponent implements Component {
 
     @Override
     public void operation() {
-        System.out.println("调用具体构建角色中的operation方法");
+        System.out.println("调用具体构建角色中的operation方法--0");
     }
 }

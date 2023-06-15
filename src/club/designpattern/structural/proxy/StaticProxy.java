@@ -9,6 +9,10 @@ package club.designpattern.structural.proxy;
 public class StaticProxy implements Subject{
     private RealSubject realSubject;
 
+    public StaticProxy(){
+        this.realSubject = new RealSubject();
+    }
+
     @Override
     public void show() {
         if(realSubject==null){

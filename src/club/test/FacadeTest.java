@@ -1,7 +1,7 @@
 package club.test;
 
 import club.designpattern.structural.facade.Facade;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author Guzx

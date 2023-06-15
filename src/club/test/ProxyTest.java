@@ -2,7 +2,7 @@ package club.test;
 
 import club.designpattern.structural.proxy.*;
 import net.sf.cglib.proxy.Enhancer;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
@@ -17,18 +17,15 @@ public class ProxyTest {
 
     @Test
     public void staticTest() {
-        StaticProxy staticProxy = new StaticProxy();
+        Subject staticProxy = new StaticProxy();
         staticProxy.show();
     }
 
     @Test
     public void dynamicTest() {
-//        InvocationHandler handler = new DynamicProxy(new RealSubject());
-//        Subject subject = (Subject) Proxy.newProxyInstance(Subject.class.getClassLoader(),new Class[]{Subject.class},handler);
-//        subject.show();
-
-        DynamicProxy proxy = new DynamicProxy();
-        Subject instance = proxy.getInstance(new RealSubject());
+        RealSubject realSubject = new RealSubject();
+        DynamicProxy proxy = new DynamicProxy(realSubject);
+        Subject instance = proxy.getInstance();
         instance.show();
 
     }
@@ -36,9 +33,9 @@ public class ProxyTest {
     @Test
     public void cglibTest() {
         Enhancer enhancer = new Enhancer();
-        enhancer.setSuperclass(RealSubject2.class);
+        enhancer.setSuperclass(RealSubject.class);
         enhancer.setCallback(new MyMethodInterceptor());
-        RealSubject2 realSubject = (RealSubject2) enhancer.create();
+        RealSubject realSubject = (RealSubject) enhancer.create();
         realSubject.show();
     }
 }
