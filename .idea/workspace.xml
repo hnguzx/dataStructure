@@ -22,7 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46569585-b49e-405c-8371-3aa1a7a83b0f" name="Default Changelist" comment="更新">
+    <list default="true" id="46569585-b49e-405c-8371-3aa1a7a83b0f" name="Default Changelist" comment="排序算法回顾">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataStructure.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructure.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/club/algorithm/sort/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/algorithm/sort/Sort.java" afterDir="false" />
@@ -204,7 +204,7 @@
       <workItem from="1622520018062" duration="617000" />
       <workItem from="1622777868912" duration="1762000" />
       <workItem from="1686793366392" duration="20510000" />
-      <workItem from="1686879536731" duration="1602000" />
+      <workItem from="1686879536731" duration="4769000" />
     </task>
     <task id="LOCAL-00001" summary="删除无用文件">
       <created>1618562438264</created>
@@ -276,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686821020050</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="排序算法回顾">
+      <created>1686905231823</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1686905231823</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,7 +321,8 @@
     <MESSAGE value="更新并整理代码" />
     <MESSAGE value="完成了可以多步撤回的备忘录。&#10;完结，撒花✿✿ヽ(°▽°)ノ✿" />
     <MESSAGE value="更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新" />
+    <MESSAGE value="排序算法回顾" />
+    <option name="LAST_COMMIT_MESSAGE" value="排序算法回顾" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -331,13 +339,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/club/algorithm/sort/Sort.java</url>
-          <line>82</line>
+          <line>83</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/club/algorithm/sort/Sort.java</url>
-          <line>153</line>
+          <line>180</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/club/algorithm/sort/Sort.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/club/algorithm/sort/Sort.java</url>
+          <line>164</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

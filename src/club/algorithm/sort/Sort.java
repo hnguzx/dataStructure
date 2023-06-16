@@ -10,7 +10,7 @@ public class Sort {
 //            origin[i] = (int) (Math.random() * 1000000);
 //        }
 
-        int[] origin = new int[]{9, 2, 1, 7, 2, 3, 5, 4, 6, 0, 12};
+        int[] origin = new int[]{9, 2, 1, 7, 2, 3, 5, 4, 6, 0, 8, 5, 3, 0};
 
         System.out.println("排序前：");
         System.out.println(new Date().getTime());
@@ -22,6 +22,7 @@ public class Sort {
 
         // 八百万个随机数据的测试时间
         fast(origin, 0, origin.length - 1); // 800万 917ms
+//        quickSort(origin, 0, origin.length - 1); // 800万 632ms
 //        mergeSort(origin, 0, origin.length - 1); // 800万 1109ms
 //        hill(origin); // 800万 1598ms
 //        bucket(origin); // 800万 370ms
@@ -29,7 +30,7 @@ public class Sort {
 
         System.out.println("排序后：");
         System.out.println(new Date().getTime());
-//        System.out.println(Arrays.toString(origin));
+        System.out.println(Arrays.toString(origin));
 
     }
 
@@ -139,6 +140,31 @@ public class Sort {
         if (right > l) {
             fast(origin, l, right);
         }
+    }
+
+    public static void quickSort(int[] origin, int left, int right) {
+        if (right > left) {
+            int mediumIndex = partition(origin, left, right);
+            quickSort(origin, left, mediumIndex - 1);
+            quickSort(origin, mediumIndex + 1, right);
+        }
+    }
+
+    public static int partition(int[] origin, int left, int right) {
+        int mediumValue = origin[right];
+        int secondIndex = left;
+        for (int i = left; i < right; i++) {
+            if (origin[i] <= mediumValue) {
+                int temp = origin[i];
+                origin[i] = origin[secondIndex];
+                origin[secondIndex] = temp;
+                secondIndex++;
+            }
+        }
+        int temp = origin[secondIndex];
+        origin[secondIndex] = origin[right];
+        origin[right] = temp;
+        return secondIndex;
     }
 
     // 归并排序，分治思想。
