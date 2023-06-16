@@ -22,58 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46569585-b49e-405c-8371-3aa1a7a83b0f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/cglib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/projectlombok_lombok.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/decorator/ConcreteAfterDecorator2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/decorator/ConcreteBeforeDecorator1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/designpattern/structural/decorator/ConcreteBeforeDecorator2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="46569585-b49e-405c-8371-3aa1a7a83b0f" name="Default Changelist" comment="更新">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataStructure.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructure.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/creative/builder/Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/creative/builder/Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/creative/builder/Director.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/creative/builder/Director.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/structural/proxy/DynamicProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/structural/proxy/DynamicProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/structural/proxy/StaticProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/club/designpattern/structural/proxy/StaticProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/test/AdapterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/club/test/AdapterTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/test/BuilderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/club/test/BuilderTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/test/DemoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/club/test/DemoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/test/FactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/club/test/FactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/test/PrototypeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/club/test/PrototypeTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/test/ProxyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/club/test/ProxyTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dataStructure/club/test/SingletonTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataStructure/club/test/SingletonTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/algorithm/commonAlgorithm/SeparateResolve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/algorithm/commonAlgorithm/SeparateResolve.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/club/algorithm/sort/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/algorithm/sort/Sort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/creative/builder/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/designpattern/creative/builder/Builder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/creative/builder/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/designpattern/creative/builder/Director.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/structural/decorator/ConcreteComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/designpattern/structural/decorator/ConcreteComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/structural/decorator/ConcreteDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/designpattern/structural/decorator/ConcreteAfterDecorator1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/structural/proxy/DynamicProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/designpattern/structural/proxy/DynamicProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/structural/proxy/RealSubject2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/designpattern/structural/proxy/StaticProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/designpattern/structural/proxy/StaticProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/test/AdapterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/AdapterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/test/BridgeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/BridgeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/test/BuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/BuilderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/test/CommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/CommandTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/test/CompositeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/CompositeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/test/DecoratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/DecoratorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/test/DemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/DemoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/test/FacadeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/FacadeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/test/FactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/FactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/test/FlyWeightTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/FlyWeightTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/test/IteratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/IteratorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/test/MediatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/MediatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/test/MementoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/MementoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/test/ObserverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/ObserverTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/test/PrototypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/PrototypeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/test/ProxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/ProxyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/test/ResponsibilityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/ResponsibilityTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/test/SingletonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/SingletonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/test/StateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/StateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/test/StrategyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/StrategyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/test/TemplateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/TemplateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/test/VisitorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/test/VisitorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,28 +56,28 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/guzx/dataStructure",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.228125",
-    "project.structure.side.proportion": "0.34219268",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/guzx/dataStructure&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.228125&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.34219268&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\Git_Repositories\DataStructure\src\club\file" />
@@ -251,7 +203,8 @@
       <workItem from="1619342157220" duration="1221000" />
       <workItem from="1622520018062" duration="617000" />
       <workItem from="1622777868912" duration="1762000" />
-      <workItem from="1686793366392" duration="14089000" />
+      <workItem from="1686793366392" duration="20510000" />
+      <workItem from="1686879536731" duration="1602000" />
     </task>
     <task id="LOCAL-00001" summary="删除无用文件">
       <created>1618562438264</created>
@@ -316,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619341619188</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="更新">
+      <created>1686821020050</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1686821020050</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,7 +313,8 @@
     <MESSAGE value="中介者，迭代器，访问者，备忘录，解释器" />
     <MESSAGE value="更新并整理代码" />
     <MESSAGE value="完成了可以多步撤回的备忘录。&#10;完结，撒花✿✿ヽ(°▽°)ノ✿" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了可以多步撤回的备忘录。&#10;完结，撒花✿✿ヽ(°▽°)ノ✿" />
+    <MESSAGE value="更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -367,6 +328,16 @@
           <url>file://$PROJECT_DIR$/src/club/test/DecoratorTest.java</url>
           <line>18</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/club/algorithm/sort/Sort.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/club/algorithm/sort/Sort.java</url>
+          <line>153</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

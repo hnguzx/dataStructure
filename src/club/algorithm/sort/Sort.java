@@ -19,11 +19,11 @@ public class Sort {
 //        bubble(origin);
 //        select(origin);
 //        insert(origin);
-//        merge(origin, 0, origin.length - 1);
 
         // 八百万个随机数据的测试时间
+        fast(origin, 0, origin.length - 1); // 800万 917ms
+//        mergeSort(origin, 0, origin.length - 1); // 800万 1109ms
 //        hill(origin); // 800万 1598ms
-//        fast(origin, 0, origin.length - 1); // 800万 917ms
 //        bucket(origin); // 800万 370ms
 //        heap(origin); // 800万 1687ms
 
@@ -36,7 +36,7 @@ public class Sort {
     // 冒泡排序，时间复杂度较高，适合数据量较小时使用
     public static void bubble(int[] origin) {
         int temp = 0;
-        boolean isContinue = false; // 标志着一个循环数组的排序是否有变化，如果没有，可提前结束排序
+        boolean isContinue; // 标志着一个循环数组的排序是否有变化，如果没有，可提前结束排序
         for (int j = 0; j < origin.length; j++) {
             isContinue = false;
             for (int i = 0; i < origin.length - 1 - j; i++) {
@@ -53,9 +53,9 @@ public class Sort {
         }
     }
 
-    // 选择排序
+    // 选择排序，与冒泡排序类似，时间复杂度较高，一般不推荐使用
     public static void select(int[] origin) {
-        int index; // 当前要进行排序的数据的下边
+        int index; // 当前要进行排序的数据的下标
         int value; // 当前要进行排序的数据的值
 
         for (int i = 0; i < origin.length; i++) {
@@ -72,7 +72,7 @@ public class Sort {
         }
     }
 
-    // 插入排序
+    // 插入排序，时间复杂度较高，在处理部分有序的数据时，可以使用。
     public static void insert(int[] origin) {
         int index; // 数组中已排序的部分的最后一个数组的下标
         int value; // 数组中未排序的部分的第一个数组的值
@@ -88,29 +88,7 @@ public class Sort {
         }
     }
 
-    // 希尔排序
-    public static void hill(int[] origin) {
-        int increment = origin.length / 2; // 增量，即要将原数组分解成小数组的数量
-        int index = 0; // 用于保存后面的第一个数的下标
-        int value = 0; // 用于保存后面的第一个数
-        while (increment > 0) {
-            for (int i = increment; i < origin.length; i++) {
-                // 遍历各组数据
-                index = i;
-                value = origin[i];
-                if (index < origin.length) {
-                    while (index - increment >= 0 && origin[index - increment] > value) {
-                        origin[index] = origin[index - increment];
-                        index -= increment;
-                    }
-                    origin[index] = value;
-                }
-            }
-            increment = increment / 2;
-        }
-    }
-
-    // 快速排序
+    // 快速排序，分治思想。平均性能优秀，但在最差的情况下与冒泡排序是一样的
     public static void fast(int[] origin, int left, int right) {
         // 将数组分为左右两部分
         int l = left; // 左边起始下标
@@ -163,47 +141,66 @@ public class Sort {
         }
     }
 
-    // 归并排序 分治
-    public static void merge(int[] origin, int left, int right) {
+    // 归并排序，分治思想。
+    public static void mergeSort(int[] origin, int left, int right) {
         // 说明分解后的数组长度大于1
         if (left < right) {
             // 通过递归将原数组分解
             int mid = (right + left) / 2;
             // 向左分解
-            merge(origin, left, mid);
+            mergeSort(origin, left, mid);
             // 向右分解
-            merge(origin, mid + 1, right);
+            mergeSort(origin, mid + 1, right);
+            merge(origin, left, mid, right);
+        }
+    }
 
-            // 从左至右进行合并
-            int l = left;
-            int r = mid + 1;
-            int t = 0;
-            // 遍历两部分
-            // 用于临时保存过程中的数据
-            int[] temp = new int[origin.length];
-            // 左右一起放置
-            while (l <= mid && r <= right) {
-                // 将小的数据优先放入临时数组
-                if (origin[l] < origin[r]) {
-                    temp[t++] = origin[l++];
-                } else {
-                    temp[t++] = origin[r++];
+    public static void merge(int[] arr, int left, int mid, int right) {
+        int[] temp = new int[right - left + 1];
+        int i = left;
+        int j = mid + 1;
+        int k = 0;
+
+        while (i <= mid && j <= right) {
+            if (arr[i] < arr[j]) {
+                temp[k++] = arr[i++];
+            } else {
+                temp[k++] = arr[j++];
+            }
+        }
+
+        while (i <= mid) {
+            temp[k++] = arr[i++];
+        }
+
+        while (j <= right) {
+            temp[k++] = arr[j++];
+        }
+
+        for (int p = 0; p < temp.length; p++) {
+            arr[left + p] = temp[p];
+        }
+    }
+
+    // 希尔排序
+    public static void hill(int[] origin) {
+        int increment = origin.length / 2; // 增量，即要将原数组分解成小数组的数量
+        int index = 0; // 用于保存后面的第一个数的下标
+        int value = 0; // 用于保存后面的第一个数
+        while (increment > 0) {
+            for (int i = increment; i < origin.length; i++) {
+                // 遍历各组数据
+                index = i;
+                value = origin[i];
+                if (index < origin.length) {
+                    while (index - increment >= 0 && origin[index - increment] > value) {
+                        origin[index] = origin[index - increment];
+                        index -= increment;
+                    }
+                    origin[index] = value;
                 }
             }
-            // 当右边已经全部放置完毕后
-            while (l <= mid) {
-                temp[t++] = origin[l++];
-            }
-            // 当左边已经全部放置完毕后
-            while (r <= right) {
-                temp[t++] = origin[r++];
-            }
-            // 将临时数组中的数组赋值回原来的数组中
-            t = 0;
-            int tempLeft = left;
-            while (tempLeft <= right) {
-                origin[tempLeft++] = temp[t++];
-            }
+            increment = increment / 2;
         }
     }
 
